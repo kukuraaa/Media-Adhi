@@ -1,58 +1,158 @@
-import { Link, useLocation } from 'react-router-dom'
-import { PhoneCall } from 'lucide-react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Menu, X } from 'lucide-react'
+import logo from "../../assets/Vector.png"
 
 export const Navbar = () => {
-  const location = useLocation()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const navLinks = [
-    { name: 'Tentang Kami', path: '/' },
-    { name: 'Titik Billboard', path: '/billboard/1' },
-    { name: 'Portofolio', path: '/project/1' },
-    { name: 'Artikel', path: '/articles' },
-  ]
+  return (
+    <header className="w-full bg-white font-sans">
+      <nav className="relative mx-auto flex max-w-1440 flex-col bg-white px-4 pb-4 pt-6 sm:px-6 md:px-8 lg:px-16 lg:px-20">
+        {/* ========================================
+            BARIS UTAMA NAVBAR
+        ========================================= */}
+        <div className="flex h-10 w-full items-center justify-between gap-2 md:gap-4">
+          {/* LOGO BRAND */}
+          <Link
+            to="/"
+            className="flex h-8 w-auto shrink-0 items-center sm:h-9 lg:h-10"
+          >
+            <img
+              src={logo}
+              alt="Media Adhi Persada"
+              className="h-full w-auto object-contain object-left"
+            />
+          </Link>
 
-  return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-      <div className="max-w-1440 mx-20 px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-xl shadow-md shadow-blue-500/20">
-            M
-          </div>
-          <div>
-            <span className="text-lg font-bold text-slate-900 leading-tight block">Media Adhi Persada</span>
-            <span className="text-xs text-slate-500 font-medium">Outdoor Advertising & Production</span>
-          </div>
-        </Link>
+          {/* MENU DESKTOP (Berubah di md: 768px ke atas) */}
+          <div className="hidden items-center justify-end gap-0.5 md:flex lg:gap-1 xl:gap-2">
+            <Link
+              to="/"
+              className="flex h-10 items-center justify-center rounded-lg px-2 py-2 whitespace-nowrap text-xs font-normal tracking-tight text-[#111111] transition-colors hover:bg-slate-50 hover:text-[#013F8B] lg:px-3 lg:text-sm xl:text-base"
+            >
+              Tentang Kami
+            </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => {
-            const isActive = location.pathname === link.path || (link.path !== '/' && location.pathname.startsWith(link.path))
-            return (
-              <Link
-                key={link.name}
-                to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isActive ? 'text-blue-600 font-semibold' : 'text-slate-600'
-                }`}
-              >
-                {link.name}
-              </Link>
-            )
-          })}
-        </nav>
+            <Link
+              to="/"
+              className="flex h-10 items-center justify-center rounded-lg px-2 py-2 whitespace-nowrap text-xs font-normal tracking-tight text-[#111111] transition-colors hover:bg-slate-50 hover:text-[#013F8B] lg:px-3 lg:text-sm xl:text-base"
+            >
+              Layanan
+            </Link>
 
-        <div className="flex items-center gap-3">
-          <a
-            href="https://wa.me/"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition shadow-sm hover:shadow-md"
-          >
-            <PhoneCall className="w-4 h-4" />
-            <span>Hubungi Kami</span>
-          </a>
-        </div>
-      </div>
-    </header>
-  )
+            <Link
+              to="/billboard/1"
+              className="flex h-10 items-center justify-center rounded-lg px-2 py-2 whitespace-nowrap text-xs font-normal tracking-tight text-[#111111] transition-colors hover:bg-slate-50 hover:text-[#013F8B] lg:px-3 lg:text-sm xl:text-base"
+            >
+              Billboard
+            </Link>
+
+            <Link
+              to="/project/1"
+              className="flex h-10 items-center justify-center rounded-lg px-2 py-2 whitespace-nowrap text-xs font-normal tracking-tight text-[#111111] transition-colors hover:bg-slate-50 hover:text-[#013F8B] lg:px-3 lg:text-sm xl:text-base"
+            >
+              Portofolio
+            </Link>
+
+            <Link
+              to="/"
+              className="flex h-10 items-center justify-center rounded-lg px-2 py-2 whitespace-nowrap text-xs font-normal tracking-tight text-[#111111] transition-colors hover:bg-slate-50 hover:text-[#013F8B] lg:px-3 lg:text-sm xl:text-base"
+            >
+              Testimoni
+            </Link>
+
+            <Link
+              to="/"
+              className="flex h-10 items-center justify-center rounded-lg px-2 py-2 whitespace-nowrap text-xs font-normal tracking-tight text-[#111111] transition-colors hover:bg-slate-50 hover:text-[#013F8B] lg:px-3 lg:text-sm xl:text-base"
+            >
+              Kontak
+            </Link>
+
+            {/* BUTTON CTA HUBUNGI KAMI */}
+            <Link
+              to="/"
+              className="ml-1 flex h-10 shrink-0 items-center justify-center rounded-lg bg-[#013F8B] px-3 py-2 whitespace-nowrap text-xs font-normal tracking-tight text-white transition-colors hover:bg-[#023676] lg:px-4 lg:text-sm xl:text-base"
+            >
+              Hubungi Kami
+            </Link>
+          </div>
+
+          {/* HAMBURGER BUTTON (Hanya di HP / bawah 768px) */}
+          <button
+            type="button"
+            aria-label={isMenuOpen ? 'Tutup menu' : 'Buka menu'}
+            aria-expanded={isMenuOpen}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="flex h-10 w-10 items-center justify-center rounded-lg text-[#111111] hover:bg-slate-100 md:hidden"
+          >
+            {isMenuOpen ? (
+              <X size={24} strokeWidth={1.8} />
+            ) : (
+              <Menu size={24} strokeWidth={1.8} />
+            )}
+          </button>
+        </div>
+
+        {/* ========================================
+            MOBILE MENU DROPDOWN
+        ========================================= */}
+        {isMenuOpen && (
+          <div className="absolute left-4 right-4 top-full z-50 mt-2 rounded-xl border border-slate-100 bg-white p-4 shadow-xl md:hidden">
+            <div className="flex flex-col gap-1">
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-base font-normal text-[#111111] hover:bg-slate-50 hover:text-[#013F8B]"
+              >
+                Tentang Kami
+              </Link>
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-base font-normal text-[#111111] hover:bg-slate-50 hover:text-[#013F8B]"
+              >
+                Layanan
+              </Link>
+              <Link
+                to="/billboard/1"
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-base font-normal text-[#111111] hover:bg-slate-50 hover:text-[#013F8B]"
+              >
+                Billboard
+              </Link>
+              <Link
+                to="/project/1"
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-base font-normal text-[#111111] hover:bg-slate-50 hover:text-[#013F8B]"
+              >
+                Portofolio
+              </Link>
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-base font-normal text-[#111111] hover:bg-slate-50 hover:text-[#013F8B]"
+              >
+                Testimoni
+              </Link>
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-base font-normal text-[#111111] hover:bg-slate-50 hover:text-[#013F8B]"
+              >
+                Kontak
+              </Link>
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="mt-2 flex h-10 items-center justify-center rounded-lg bg-[#013F8B] px-4 py-2 font-sans text-base font-normal text-white hover:bg-[#023676]"
+              >
+                Hubungi Kami
+              </Link>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
+  )
 }
