@@ -3,7 +3,7 @@ import cibadakImg from "../../../assets/cibadak.png";
 
 export const SectionBillboard = () => {
   return (
-    <section className="px-4 md:px-8 lg:px-20 pb-10 lg:pb-20">
+    <section className="px-4 md:px-8 lg:px-20 pb-6 lg:pb-10">
       
       <button className="flex items-center gap-2 mb-6 lg:mb-10 mt-6 lg:mt-10 text-[#212121]">
         <ArrowLeft size={24} />
