@@ -1,5 +1,4 @@
-import { MapPin } from 'lucide-react'
-import { FaInstagram, FaWhatsapp, FaFacebookF } from 'react-icons/fa'
+import { FaInstagram, FaWhatsapp, FaFacebookF, FaMapMarkerAlt, } from 'react-icons/fa'
 import logo from "../../assets/Vector.png"
 
 export const Footer = () => {
@@ -23,7 +22,7 @@ export const Footer = () => {
               <FaInstagram className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
               <FaWhatsapp className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
               <FaFacebookF className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
-              <MapPin className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+              <FaMapMarkerAlt className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
             </div>
           </div>
 
@@ -58,7 +57,7 @@ export const Footer = () => {
             <FaInstagram className="w-5 h-5 text-blue-900 shrink-0" />
             <FaWhatsapp className="w-5 h-5 text-blue-900 shrink-0" />
             <FaFacebookF className="w-5 h-5 text-blue-900 shrink-0" />
-            <MapPin className="w-5 h-5 text-blue-900 shrink-0" />
+            <FaMapMarkerAlt className="w-5 h-5 text-blue-900 shrink-0" />
           </div>
         </div>
       </div>
