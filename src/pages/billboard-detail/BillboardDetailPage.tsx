@@ -3,6 +3,7 @@ import { LokasiDetail } from "./section/LokasiDetail"
 import { LokasiPremium } from "./section/LokasiPremium"
 import { SectionBillboard } from "./section/SectionBillboard"
 import { Traffic } from "./section/Traffic"
+import { WujudkanIde } from "./section/WujudkanIde"
 
 export const BillboardDetailPage = () => {
   return (
@@ -12,6 +13,7 @@ export const BillboardDetailPage = () => {
       <LokasiDetail />
       <AksiCepat />
       <LokasiPremium />
+      <WujudkanIde />
     </div>
   )
 }
