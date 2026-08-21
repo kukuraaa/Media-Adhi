@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { FaWhatsapp, FaMapMarkerAlt, FaInstagram, FaFacebookF, FaShareAlt, FaRegCopy, FaCheck } from "react-icons/fa";
+import { AksiAjukan } from "./AksiAjukan";
 
 export const AksiCepat = () => {
   const [copied, setCopied] = useState(false);
   const shareUrl = "https://mediaadhipersada.id/billboards/billboard-baru";
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(shareUrl);
@@ -12,6 +14,7 @@ export const AksiCepat = () => {
   };
 
   return (
+    <>
     <div className="w-full lg:w-[383px] flex flex-col gap-[10px] shrink-0 mt-[40px] lg:mt-0 px-4 sm:px-6 lg:px-0">
     
       <div className="w-full bg-[#F9F9F9] border border-[rgba(0,0,0,0.04)] rounded-[16px] lg:rounded-[24px] p-4 sm:p-5 lg:p-[20px] flex flex-col gap-4 lg:gap-[20px]">
@@ -42,7 +45,7 @@ export const AksiCepat = () => {
             <span>Konsultasikan Sekarang</span>
           </button>
 
-          <button className="w-full h-[44px] lg:h-[48px] bg-transparent border border-[rgba(21,21,21,1)] text-[#212121] text-[13px] lg:text-[14px] font-medium rounded-[100px] flex items-center justify-center px-4 lg:px-[24px] hover:bg-gray-100 transition-colors">
+          <button onClick={() => setIsModalOpen(true)}className="w-full h-[44px] lg:h-[48px] bg-transparent border border-[rgba(21,21,21,1)] text-[#212121] text-[13px] lg:text-[14px] font-medium rounded-[100px] flex items-center justify-center px-4 lg:px-[24px] hover:bg-gray-100 transition-colors">
             Ajukan Penawaran
           </button>
         </div>
@@ -67,7 +70,8 @@ export const AksiCepat = () => {
           </button>
         </div>
       </div>
-
     </div>
+    <AksiAjukan isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
   );
 };
