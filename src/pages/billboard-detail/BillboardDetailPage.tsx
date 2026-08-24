@@ -8,12 +8,23 @@ import { WujudkanIde } from "./section/WujudkanIde"
 export const BillboardDetailPage = () => {
   return (
     <div>
-      <SectionBillboard />
-      <Traffic/>
-      <LokasiDetail />
-      <AksiCepat />
+      <div className="px-4 md:px-8 lg:px-20">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-6 lg:gap-[40px] w-full">
+          <div className="w-full lg:w-[857px] shrink-0 flex flex-col">
+            <SectionBillboard />
+            <Traffic />
+            <LokasiDetail />
+            <div className="block lg:hidden w-full mt-6 sm:mt-8">
+              <AksiCepat />
+            </div>
+          </div>
+          <div className="hidden lg:block w-[383px] shrink-0 sticky top-10 self-start pt-[72px]">
+            <AksiCepat />
+          </div>
+        </div>
+      </div>
       <LokasiPremium />
       <WujudkanIde />
     </div>
-  )
-}
+  );
+};

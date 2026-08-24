@@ -11,7 +11,7 @@ const trafficData = [
 
 export const Traffic = () => {
   return (
-    <section className="px-4 md:px-8 lg:px-20 py-6 lg:py-10">
+    <section className="w-full py-6 lg:py-10">
       <div className="flex flex-col gap-4 lg:gap-[20px] w-full lg:w-[857px]">
         
         <h2 className="text-[24px] sm:text-[28px] lg:text-[32px] font-semibold leading-[140%] tracking-[-0.04em] text-[#212121]">Traffic Harian (Estimasi)</h2>
@@ -22,8 +22,7 @@ export const Traffic = () => {
             return (
               <div 
                 key={index}
-                className="flex flex-col justify-between w-full h-auto min-h-[170px] lg:h-[196px] bg-[#F9F9F9] rounded-[20px] lg:rounded-[24px] border border-[#000000]/[0.04] p-3 sm:p-4 lg:p-[20px]"
-              >
+                className="flex flex-col justify-between w-full h-auto min-h-[170px] lg:h-[196px] bg-[#F9F9F9] rounded-[20px] lg:rounded-[24px] p-3 sm:p-4 lg:p-[20px]">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 w-full lg:h-[48px]">
                   <div className="flex items-center justify-center w-[36px] sm:w-[40px] lg:w-[48px] h-[36px] sm:h-[40px] lg:h-[48px] rounded-full bg-[#E4F0FF] shrink-0">
                     <IconComponent className="w-[18px] lg:w-[20px] h-[18px] lg:h-[20px] text-[#0052CC]" />

@@ -3,7 +3,7 @@ import cibadakImg from "../../../assets/cibadak.png";
 
 export const SectionBillboard = () => {
   return (
-    <section className="px-4 md:px-8 lg:px-20 pb-6 lg:pb-10">
+    <section className="w-full pb-6 lg:pb-10">
       
       <button className="flex items-center gap-2 mb-6 lg:mb-10 mt-6 lg:mt-10 text-[#212121]">
         <ArrowLeft size={24} />
@@ -13,9 +13,13 @@ export const SectionBillboard = () => {
       <div className="flex flex-col gap-6 lg:gap-[40px] w-full lg:w-[857px] lg:max-w-[857px] h-auto">
       
         <div className="flex flex-col">
-          <h1 className="inline-block px-4 lg:px-6 py-1.5 lg:py-2 rounded-full bg-blue-100 text-green-700 w-fit text-xs lg:text-sm font-medium">Tersedia</h1>
+          <h1 className="inline-block px-4 lg:px-6 py-1.5 lg:py-2 rounded-full bg-blue-100 text-green-700 w-fit text-xs lg:text-sm font-medium">
+            Tersedia
+          </h1>
 
-          <h1 className="mt-3 lg:mt-4 w-full text-[28px] sm:text-[36px] lg:text-[48px] font-semibold leading-[110%] lg:leading-[100%] tracking-[-0.04em] py-2 lg:py-[10px] text-[#212121]">Billboard 5 || Pertigaan alun-alun Cisaat, Depan polsek</h1>
+          <h1 className="mt-3 lg:mt-4 w-full text-[28px] sm:text-[36px] lg:text-[48px] font-semibold leading-[110%] lg:leading-[100%] tracking-[-0.04em] py-2 lg:py-[10px] text-[#212121]">
+            Billboard 5 || Pertigaan alun-alun Cisaat, Depan polsek
+          </h1>
           
           <div className="flex items-center gap-[8px] w-full lg:w-[253px] h-auto lg:h-[40px] p-2 lg:px-[8px] lg:py-[8px] text-sm lg:text-[18px] leading-[100%] tracking-[-0.04em] text-[#212121]/70 mt-1">
             <MapPin className="w-[16px] h-[20.41px] shrink-0" />

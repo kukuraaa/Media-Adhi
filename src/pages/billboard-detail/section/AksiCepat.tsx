@@ -15,7 +15,7 @@ export const AksiCepat = () => {
 
   return (
     <>
-    <div className="w-full lg:w-[383px] flex flex-col gap-[10px] shrink-0 mt-[40px] lg:mt-0 px-4 sm:px-6 lg:px-0">
+    <div className="w-full lg:w-[383px] flex flex-col gap-[10px] shrink-0">
     
       <div className="w-full bg-[#F9F9F9] border border-[rgba(0,0,0,0.04)] rounded-[16px] lg:rounded-[24px] p-4 sm:p-5 lg:p-[20px] flex flex-col gap-4 lg:gap-[20px]">
         

@@ -1,9 +1,11 @@
 export const LokasiDetail = () => {
   return (
-    <section className="w-full max-w-[857px] mt-[20px] lg:mt-[40px] px-4 md:px-8 lg:px-0 lg:ml-20">
-      <div className="flex flex-col gap-[20px]">
+    <section className="w-full h-auto mt-[20px] lg:mt-[40px]">
+      <div className="flex flex-col gap-[16px] sm:gap-[20px] w-full">
         
-        <h3 className="text-[#212121] font-semibold text-[24px] md:text-[32px] leading-[140%] tracking-[-0.04em]">Lokasi Detail</h3>
+        <h3 className="w-full text-[#212121] font-semibold text-[24px] sm:text-[28px] lg:text-[32px] leading-[140%] tracking-[-0.04em]">
+          Lokasi Detail
+        </h3>
 
         <div className="w-full h-[300px] sm:h-[400px] lg:h-[488px] rounded-[16px] overflow-hidden">
           <iframe 
@@ -17,6 +19,7 @@ export const LokasiDetail = () => {
             title="Lokasi Detail Workshop MAP Adv."
           />
         </div>
+
       </div>
     </section>
   );
