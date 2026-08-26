@@ -51,33 +51,32 @@ const billboardData = [
 
 export const LokasiPremium = () => {
   return (
-    <section className="w-full bg-[#F6F6F6] py-[40px] md:py-[60px] lg:py-[80px] px-4 md:px-8 lg:px-[80px] mt-[40px] lg:mt-[80px]">
+    <section className="w-full bg-[#F6F6F6] py-[40px] md:py-[60px] lg:py-[80px] px-4 md:px-8 lg:px-[80px] mt-[40px] lg:mt-[80px] lg:h-[1172px]">
       <div className="w-full flex flex-col gap-[32px] md:gap-[40px]">
 
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 md:gap-6">
-          <div className="flex flex-col gap-[12px] md:gap-[16px] max-w-[549px]">
-            <h2 className="text-[#212121] font-semibold text-[28px] sm:text-[36px] md:text-[48px] leading-[100%] tracking-[-0.04em]">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 md:gap-6 lg:h-[124px]">
+          <div className="flex flex-col gap-[24px] lg:w-[1084px] lg:h-[124px]">
+            <h2 className="text-[#212121] font-semibold text-[28px] sm:text-[36px] md:text-[48px] lg:w-[519px] lg:h-[58px] lg:leading-[58px] tracking-[-0.04em]">
               Lokasi Premium Lainnya
             </h2>
-            <p className="text-[14px] text-[rgba(17,17,17,0.6)] leading-[180%]">Pilih spot billboard strategis yang siap mengangkat brand Anda.Transparan, cepat, dan mudah untuk booking.</p>
-
+            <p className="text-[14px] text-[rgba(17,17,17,0.6)] lg:w-[549px] lg:h-[50px] lg:leading-[25px]">Pilih spot billboard strategis yang siap mengangkat brand Anda.Transparan, cepat, dan mudah untuk booking.</p>
           </div>
 
-          <div className="inline-flex items-center gap-[8px] bg-[#D4E4D5] text-[#03850D] text-[16px] md:text-[18px] font-normal tracking-[-0.04em] px-[20px] md:px-[24px] py-[10px] md:py-[12px] rounded-[100px] w-fit shrink-0 whitespace-nowrap">
-            <FaMapMarkerAlt className="text-[18px] md:text-[20px] shrink-0" />
+           <div className="inline-flex items-center justify-center gap-[8px] bg-[#D4E4D5] text-[#03850D] text-[18px] font-normal tracking-[-0.04em] w-[172px] h-[48px] rounded-[100px] shrink-0 whitespace-nowrap">
+            <FaMapMarkerAlt className="text-[20px] shrink-0" />
             <span>5 lokasi aktif</span>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(3,413.33px)] gap-[20px] lg:h-[848px] lg:grid-rows-[repeat(2,414px)]">
           {billboardData.map((billboard, index) => (
             <div key={index}
-              className="bg-white rounded-[16px] p-[8px] flex flex-col gap-[12px] overflow-hidden w-full">
+               className="bg-white rounded-[16px] p-[8px] flex flex-col gap-[12px] overflow-hidden w-full lg:h-[414px]">
    
-              <div className="relative w-full h-[220px] sm:h-[250px] lg:h-[289px] overflow-hidden rounded-[8px]">
-                <img src={billboard.image} alt={billboard.title} className="w-full h-full object-cover"/>
+              <div className="relative w-full lg:w-[397.33px] h-[220px] sm:h-[250px] lg:h-[289px] shrink-0 overflow-hidden rounded-[8px]">
+                <img src={billboard.image} alt={billboard.title} className="w-full lg:w-[397.33px] h-full lg:h-[289px] object-cover"/>
 
-                <div className={`absolute top-[8px] left-[8px] inline-flex items-center gap-[6px] px-[12px] py-[4px] rounded-full text-[12px] ${
+                <div className={`absolute top-[8px] left-[8px] inline-flex items-center gap-[8px] w-[78px] h-[20px] px-[8px] rounded-full text-[12px] ${
                     billboard.available
                       ? "bg-[#D4E4D5] text-[#03850D]"
                       : "bg-[#E5E5E5] text-[#777777]"
@@ -87,19 +86,21 @@ export const LokasiPremium = () => {
                       billboard.available ? "bg-[#03850D]" : "bg-[#777777]"
                     }`}
                   />
-                  {billboard.status}
+                  <span className="w-[46px] h-[12px] text-[12px] leading-[12px] shrink-0">
+                    {billboard.status}
+                  </span>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-[12px] w-full min-w-0">
-                <div className="flex flex-col gap-[4px] w-full min-w-0">
-                  <h3 className="text-[16px] font-medium text-[rgba(0,0,0,0.95)] leading-[140%] truncate w-full block">{billboard.title}</h3>
+              <div className="flex flex-col gap-[12px] w-full lg:w-[397.33px] min-w-0 h-[101px] shrink-0">
+                <div className="flex flex-col gap-[4px] w-[381.33px] h-[43px] min-w-0">
+                  <h3 className="w-[381.33px] h-[22px] shrink-0 text-[16px] leading-[22px] font-medium text-[rgba(0,0,0,0.95)] truncate block">{billboard.title}</h3>
 
                   <p className="text-[14px] text-[rgba(16,1,1,0.6)] leading-[140%] truncate w-full block">{billboard.address}</p>
                 </div>
 
-                <div className="flex items-center justify-between gap-[12px] w-full min-w-0">
-                  <div className={`flex items-center gap-[8px] text-[14px] min-w-0 ${
+                <div className="flex items-center justify-between gap-[12px] w-[381.33px] h-[30px] min-w-0">
+                  <div className={`flex items-center gap-[8px] text-[14px] w-[260.33px] h-[18px] min-w-0 shrink-0 ${
                       billboard.available
                         ? "text-[#03850D]"
                         : "text-[rgba(17,17,17,0.6)]"
@@ -110,10 +111,10 @@ export const LokasiPremium = () => {
                     ) : (
                       <FaClock className="text-[14px] shrink-0" />
                     )}
-                    <span className="truncate block">{billboard.info}</span>
+                    <span className="w-[232.33px] h-[17px] shrink-0 truncate block text-[14px] leading-[17px]">{billboard.info}</span>
                   </div>
 
-                  <button className={`shrink-0 px-[16px] sm:px-[20px] py-[8px] rounded-[8px] text-[14px] ${
+                  <button className={`w-[109px] h-[30px] shrink-0 flex items-center justify-center rounded-[8px] text-[14px] leading-[20px] ${
                       billboard.available
                         ? "bg-[#D4EFD8] text-[#03850D]"
                         : "bg-[#F2F2F2] text-[rgba(17,17,17,0.4)]"
