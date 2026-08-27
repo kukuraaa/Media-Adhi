@@ -54,10 +54,10 @@ export const Footer = () => {
           <span> © {new Date().getFullYear()} Media Adhi Persada. All rights reserved. - Website by Mangcoding.com</span>
 
           <div className="hidden lg:flex items-center gap-5">
-            <FaInstagram className="w-5 h-5 text-blue-900 shrink-0" />
-            <FaWhatsapp className="w-5 h-5 text-blue-900 shrink-0" />
-            <FaFacebookF className="w-5 h-5 text-blue-900 shrink-0" />
-            <FaMapMarkerAlt className="w-5 h-5 text-blue-900 shrink-0" />
+            <FaInstagram className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+            <FaWhatsapp className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+            <FaFacebookF className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+            <FaMapMarkerAlt className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
           </div>
         </div>
       </div>

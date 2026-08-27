@@ -17,7 +17,7 @@ export const AksiAjukan = ({ isOpen, onClose }: AksiAjukanProps) => {
             <h3 className="text-[#212121] text-[18px] sm:text-[24px] font-semibold leading-[130%] tracking-[-0.04em]">
               Lokasi Detail
             </h3>
-            <button onClick={onClose} className="absolute top-0 right-0 text-gray-500 hover:text-black transition-colors p-1">
+            <button onClick={onClose} className="absolute top-0 right-0 text-gray-500 hover:text-black transition-colors p-1 cursor-pointer">
               <IoClose className="text-[20px] sm:text-[24px]" />
             </button>
           </div>
@@ -73,12 +73,12 @@ export const AksiAjukan = ({ isOpen, onClose }: AksiAjukanProps) => {
 
           <div className="flex items-center justify-between w-full pt-1 sm:pt-2 gap-2">
             <button type="button" onClick={onClose}
-              className="h-[38px] sm:h-[48px] px-5 sm:px-8 border border-[#212121] rounded-[100px] text-[12px] sm:text-[14px] font-medium text-[#212121] hover:bg-gray-100 transition-colors shrink-0">
+              className="h-[38px] sm:h-[48px] px-5 sm:px-8 border border-[#212121] rounded-[100px] text-[12px] sm:text-[14px] font-medium text-[#212121] hover:bg-gray-100 transition-colors shrink-0 cursor-pointer">
               Batal
             </button>
 
             <button type="submit"
-              className="h-[38px] sm:h-[48px] px-4 sm:px-6 bg-[#013F8B] text-white rounded-[100px] text-[12px] sm:text-[14px] font-medium flex items-center justify-center gap-1.5 sm:gap-2 hover:bg-[#01326f] transition-colors shrink-0">
+              className="h-[38px] sm:h-[48px] px-4 sm:px-6 bg-[#013F8B] text-white rounded-[100px] text-[12px] sm:text-[14px] font-medium flex items-center justify-center gap-1.5 sm:gap-2 hover:bg-[#01326f] transition-colors shrink-0 cursor-pointer">
               <span>Kirim Permintaan</span>
               <FiSend className="text-[13px] sm:text-[16px]" />
             </button>

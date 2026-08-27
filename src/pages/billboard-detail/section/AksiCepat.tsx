@@ -42,10 +42,10 @@ export const AksiCepat = () => {
         <div className="flex flex-col gap-[10px]">
           <button className="w-full h-[44px] lg:h-[48px] bg-[#013F8B] text-white text-[13px] lg:text-[14px] font-medium rounded-[100px] flex items-center justify-center gap-2 px-4 lg:px-[24px] hover:bg-[#01326f] transition-colors">
             <FaWhatsapp className="text-[16px] lg:text-[18px]" />
-            <span>Konsultasikan Sekarang</span>
+            <span className="cursor-pointer">Konsultasikan Sekarang</span>
           </button>
 
-          <button onClick={() => setIsModalOpen(true)}className="w-full h-[44px] lg:h-[48px] bg-transparent border border-[rgba(21,21,21,1)] text-[#212121] text-[13px] lg:text-[14px] font-medium rounded-[100px] flex items-center justify-center px-4 lg:px-[24px] hover:bg-gray-100 transition-colors">
+          <button onClick={() => setIsModalOpen(true)}className="w-full h-[44px] lg:h-[48px] bg-transparent border border-[rgba(21,21,21,1)] text-[#212121] text-[13px] lg:text-[14px] font-medium rounded-[100px] flex items-center justify-center px-4 lg:px-[24px] hover:bg-gray-100 transition-colors cursor-pointer">
             Ajukan Penawaran
           </button>
         </div>
