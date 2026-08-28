@@ -14,7 +14,7 @@ export const Traffic = () => {
     <section className="w-full py-6 max-[767px]:w-[448px] max-[767px]:h-[729px] md:w-[720px] md:h-[603px] lg:py-10 lg:w-[857px] lg:h-[465px]">
       <div className="flex flex-col gap-4 md:gap-[20px] w-full max-[767px]:w-[448px] max-[767px]:h-[729px] md:w-[720px] md:h-[603px] lg:w-[857px] lg:h-[465px]">
         
-        <h2 className="w-full max-[767px]:w-[448px] max-[767px]:h-[45px] lg:w-[857px] h-auto lg:h-[45px] text-[24px] sm:text-[28px] lg:text-[32px] max-[767px]:text-[24px] font-semibold leading-[140%] max-[767px]:leading-[45px] tracking-[-0.04em] text-[#212121]">Traffic Harian (Estimasi)</h2>
+        <h2 className="w-full max-[767px]:w-[448px] max-[767px]:h-[45px] md:w-[720px] md:h-[45px] lg:w-[857px] h-auto lg:h-[45px] text-[24px] sm:text-[28px] lg:text-[32px] max-[767px]:text-[24px] font-semibold leading-[140%] max-[767px]:leading-[45px] tracking-[-0.04em] text-[#212121]">Traffic Harian (Estimasi)</h2>
 
         <div className="grid grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-[8px] md:gap-4 lg:gap-[8px] w-full max-[767px]:w-[448px] max-[767px]:h-[664px] md:w-[720px] md:h-[538px] lg:w-[857px] lg:h-[400px]">
           {trafficData.map((item, index) => {

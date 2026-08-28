@@ -54,7 +54,7 @@ export const LokasiPremium = () => {
     <section className="w-full max-[767px]:w-[480px] max-[767px]:h-[2592px] bg-[#F6F6F6] py-[40px] md:py-[60px] lg:py-[80px] px-4 md:px-8 lg:px-[80px] mt-[40px] lg:mt-[80px] lg:h-[1172px]">
       <div className="w-full flex flex-col gap-[32px] md:gap-[40px]">
 
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 md:gap-6 lg:h-[124px]">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 md:gap-6 max-[767px]:w-[448px] max-[767px]:h-[172px] lg:h-[124px]">
           <div className="flex flex-col gap-[24px] h-[100px] lg:w-[1084px] lg:h-[124px]">
             <h2 className="text-[#212121] font-semibold text-[28px] sm:text-[36px] md:text-[48px] w-[448px] h-[34px] leading-[34px] lg:w-[519px] lg:h-[58px] lg:leading-[58px] tracking-[-0.04em]">
               Lokasi Premium Lainnya
@@ -68,7 +68,7 @@ export const LokasiPremium = () => {
           </div>
         </div>
 
-        <div className="grid w-[448px] h-[2300px] grid-cols-1 md:grid-cols-2 lg:grid-cols-[repeat(3,413.33px)] gap-[20px] lg:h-[848px] lg:grid-rows-[repeat(2,414px)]">
+        <div className="grid w-[448px] h-[2300px] grid-cols-1 md:w-[720px] md:h-[1372px] md:grid-cols-2 lg:w-[1280px] lg:h-[848px] lg:grid-cols-[repeat(3,413.33px)] gap-[20px] lg:grid-rows-[repeat(2,414px)]">
           {billboardData.map((billboard, index) => (
             <div key={index}
                className="bg-white rounded-[16px] p-[8px] flex flex-col gap-[12px] overflow-hidden w-full lg:h-[414px]">
