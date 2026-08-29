@@ -18,8 +18,10 @@ export const BillboardDetailPage = () => {
               <AksiCepat />
             </div>
           </div>
-          <div className="hidden lg:block w-[383px] shrink-0 sticky top-10 self-start pt-[72px]">
+          <div className="hidden lg:block w-[383px] h-[2175px] shrink-0 self-start">
+            <div className="sticky top-[40px] min-[1440px]:top-[178px] min-[1440px]:translate-y-[30px]">
             <AksiCepat />
+          </div>
           </div>
         </div>
       </div>

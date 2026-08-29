@@ -15,11 +15,11 @@ export const AksiCepat = () => {
 
   return (
     <>
-    <div className="w-full max-[767px]:w-[448px] max-[767px]:h-[538px] lg:w-[383px] flex flex-col gap-[10px] shrink-0">
+   <div className="w-full max-[767px]:w-[448px] max-[767px]:h-[538px] lg:w-[383px] lg:h-[560px] flex flex-col gap-[10px] shrink-0">
     
-      <div className="w-full max-[767px]:w-[448px] max-[767px]:h-[383px] bg-[#F9F9F9] border border-[rgba(0,0,0,0.04)] rounded-[16px] lg:rounded-[24px] p-4 sm:p-5 lg:p-[20px] flex flex-col gap-4 lg:gap-[20px]">
+      <div className="w-full max-[767px]:w-[448px] max-[767px]:h-[383px] min-[1440px]:w-[383px] min-[1440px]:h-[383px] bg-[#F9F9F9] border border-[rgba(0,0,0,0.04)] rounded-[16px] lg:rounded-[24px] p-4 sm:p-5 lg:p-[20px] flex flex-col gap-4 lg:gap-[20px]">
         
-        <div className="flex flex-col gap-1 lg:gap-[8px] max-[767px]:w-[408px] max-[767px]:h-[61px]">
+        <div className="flex flex-col gap-1 lg:gap-[8px] max-[767px]:w-[408px] max-[767px]:h-[61px] min-[1440px]:w-[343px] min-[1440px]:h-[61px] min-[1440px]:shrink-0">
           <h3 className="text-[#212121] text-[18px] lg:text-[20px] font-semibold leading-[140%] tracking-[-0.04em] max-[767px]:w-[408px] max-[767px]:h-[28px]">Aksi Cepat</h3>
           <p className="text-[13px] lg:text-[14px] text-[rgba(17,17,17,0.6)] leading-[140%] max-[767px]:w-[408px] max-[767px]:h-[25px]">Butuh penawaran cepat? Hubungi tim kami.</p>
         </div>
