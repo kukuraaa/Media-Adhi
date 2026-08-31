@@ -23,8 +23,8 @@ export const Traffic = () => {
               <div 
                 key={index}
                   className="flex flex-col justify-between max-[767px]:justify-start w-full h-auto min-h-[170px] max-[767px]:w-[220px] max-[767px]:h-[216px] max-[767px]:min-h-0 md:w-[356px] md:h-[174px] md:min-h-0 lg:w-[280.33px] lg:h-[196px] lg:min-h-0 bg-[#F9F9F9] rounded-[20px] lg:rounded-[24px] p-3 sm:p-4 max-[767px]:p-[20px] lg:p-[20px]">
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 w-full lg:h-[48px]">
-                  <div className="flex items-center justify-center w-[36px] max-[767px]:w-[48px] sm:w-[40px] lg:w-[48px] h-[36px] max-[767px]:h-[48px] sm:h-[40px] lg:h-[48px] rounded-full bg-[#E4F0FF] shrink-0">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 w-full md:w-[316px] md:h-[48px] lg:w-full lg:h-[48px]">
+                  <div className="flex items-center justify-center w-[36px] max-[767px]:w-[48px] sm:w-[40px] md:w-[48px] lg:w-[48px] h-[36px] max-[767px]:h-[48px] sm:h-[40px] md:h-[48px] lg:h-[48px] rounded-full bg-[#E4F0FF] shrink-0">
                     <IconComponent className="w-[18px] lg:w-[20px] h-[18px] lg:h-[20px] text-[#0052CC]" />
                   </div>
 
@@ -34,11 +34,11 @@ export const Traffic = () => {
                 </div>
 
                 <div className="flex flex-col mt-2 sm:mt-0">
-                  <span className="w-full max-[767px]:w-[180px] lg:w-[240.33px] h-auto max-[767px]:h-[45px] lg:h-[67px] text-[32px] sm:text-[32px] lg:text-[48px] font-semibold leading-[45px] lg:leading-[67px] tracking-[-0.04em] text-[#212121]">
+                  <span className="w-full max-[767px]:w-[180px] md:w-[316px] md:h-[45px] lg:w-[240.33px] h-auto max-[767px]:h-[45px] lg:h-[67px] text-[32px] sm:text-[32px] lg:text-[48px] font-semibold leading-[45px] lg:leading-[67px] tracking-[-0.04em] text-[#212121]">
                     {item.value}
                   </span>
                   
-                  <span className="w-full max-[767px]:w-[180px] lg:w-[240.33px] h-auto max-[767px]:h-[25px] lg:h-[25px] text-[11px] sm:text-[13px] lg:text-[14px] font-normal leading-[25px] lg:leading-[25px] tracking-[-0.02em] text-[#777777]">
+                  <span className="w-full max-[767px]:w-[180px] md:w-[316px] md:h-[25px] lg:w-[240.33px] h-auto max-[767px]:h-[25px] lg:h-[25px] text-[11px] sm:text-[13px] lg:text-[14px] font-normal leading-[25px] lg:leading-[25px] tracking-[-0.02em] text-[#777777]">
                     {item.subtext}
                   </span>
                 </div>
