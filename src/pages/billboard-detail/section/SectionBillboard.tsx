@@ -5,7 +5,7 @@ export const SectionBillboard = () => {
   return (
     <section className="w-full pb-6 lg:pb-10">
       
-      <button className="flex items-center justify-center gap-2 cursor-pointer lg:w-[95px] lg:h-[40px] mb-6 lg:mb-[8px] mt-6 lg:mt-10 text-[#212121]">
+      <button className="flex items-center justify-center gap-2 cursor-pointer lg:w-[95px] lg:h-[40px] mb-6 lg:mb-[8px] mt-6 lg:mt-[80px] text-[#212121]">
         <ArrowLeft size={24} />
         <span className="font-medium lg:w-[63px] lg:h-[18px] lg:text-[18px] lg:leading-[100%]">Kembali</span>
       </button>
