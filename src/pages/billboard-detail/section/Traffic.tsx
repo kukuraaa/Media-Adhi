@@ -1,12 +1,16 @@
-import { Eye, Bike, Car, Footprints, Truck, Bus } from "lucide-react";
+import { Car, Truck } from "lucide-react";
+import { IoEyeSharp } from "react-icons/io5";
+import { TbMotorbikeFilled } from "react-icons/tb";
+import { FaPersonWalking } from "react-icons/fa6";
+import { TbBusFilled } from "react-icons/tb";
 
 const trafficData = [
-  { icon: Eye, title: "Visibility", value: "±80 meter", subtext: "Jarak pandang" },
-  { icon: Bike, title: "Roda 2", value: "8.500", subtext: "Motor & sepeda motor" },
+  { icon: IoEyeSharp, title: "Visibility", value: "±80 meter", subtext: "Jarak pandang" },
+  { icon: TbMotorbikeFilled, title: "Roda 2", value: "8.500", subtext: "Motor & sepeda motor" },
   { icon: Car, title: "Roda 4", value: "2.400", subtext: "Mobil & kendaraan pribadi" },
-  { icon: Footprints, title: "Pejalan Kaki", value: "600", subtext: "Keramaian area" },
+  { icon: FaPersonWalking, title: "Pejalan Kaki", value: "600", subtext: "Keramaian area" },
   { icon: Truck, title: "Truk", value: "350", subtext: "Distribusi & logistik" },
-  { icon: Bus, title: "Bis", value: "5", subtext: "Transportasi publik" },
+  { icon: TbBusFilled, title: "Bis", value: "5", subtext: "Transportasi publik" },
 ];
 
 export const Traffic = () => {

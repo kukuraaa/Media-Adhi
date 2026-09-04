@@ -9,8 +9,8 @@ export const ProjectDetailPage = () => {
     <>
       <Hero />
 
-      <section className="w-full">
-        <div className="w-[1280px] h-[662px] mx-auto flex gap-[20px]">
+      <section className="w-full px-[24px] lg:px-0 lg:w-[1280px] lg:h-[662px] lg:mx-auto">
+        <div className="w-full lg:w-[1280px] h-auto lg:h-[662px] mx-auto flex flex-col lg:flex-row gap-[40px] lg:gap-[20px]">
           <TentangProject />
           <SpesifikasiProject />
         </div>

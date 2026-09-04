@@ -13,9 +13,9 @@ export const Hero = () => {
         </button>
 
         <div className="w-full mt-[20px] max-md:mt-0 flex flex-row md:max-lg:flex-col max-md:flex-col items-start gap-[80px] md:max-lg:gap-[40px] max-md:gap-[40px] max-md:w-[448px] max-md:h-auto">
-          <div className="w-[570px] h-auto md:max-lg:w-[720px] md:max-lg:h-auto max-md:w-[448px] max-md:h-auto flex flex-col">
-            <div className="w-[570px] h-auto md:max-lg:w-[720px] md:max-lg:h-auto max-md:w-[448px] max-md:h-auto flex flex-col gap-[8px] max-md:gap-[10px]">
-              <h1 className="w-full lg:w-[570px] h-auto shrink-0 text-[#212121] text-[43px] md:max-lg:text-[36px] max-md:text-[36px] font-semibold leading-[100%] tracking-[-0.04em] m-0">
+          <div className="w-[570px] h-[444px] md:max-lg:w-[720px] md:max-lg:h-[394px] max-md:w-[448px] max-md:h-auto flex flex-col">
+            <div className="w-[570px] h-auto md:max-lg:w-[570px] md:max-lg:h-[154px] max-md:w-[448px] max-md:h-auto flex flex-col gap-[8px] max-md:gap-[10px]">
+              <h1 className="w-full md:max-lg:w-[570px] md:max-lg:h-[104px] lg:w-[570px] lg:h-[104px] h-auto shrink-0 text-[#212121] text-[43px] md:max-lg:text-[36px] max-md:text-[36px] font-semibold leading-[100%] tracking-[-0.04em] m-0">
                 Pembuatan Neon Box Bulat Akrilik Custom untuk TACO
               </h1>
 
@@ -27,8 +27,8 @@ export const Hero = () => {
               </div>
             </div>
 
-            <div className="w-[570px] h-[250px] md:max-lg:w-[720px] md:max-lg:h-[206px] max-md:w-[448px] max-md:h-[300px] mt-[32px] max-md:mt-[40px] flex flex-col">
-              <p className="w-[570px] h-[250px] md:max-lg:w-[720px] md:max-lg:h-[206px] max-md:w-[448px] max-md:h-[300px] text-[14px] font-normal leading-[180%] tracking-[0] text-[#777777] text-justify m-0">
+            <div className="w-[570px] h-[250px] md:max-lg:w-[720px] md:max-lg:h-[200px] max-md:w-[448px] max-md:h-[300px] mt-[32px] max-md:mt-[40px] flex flex-col">
+              <p className="w-[570px] h-[250px] md:max-lg:w-[720px] md:max-lg:h-[200px] max-md:w-[448px] max-md:h-[300px] text-[14px] font-normal leading-[180%] tracking-[0] text-[#777777] text-justify m-0">
                 Media Adhi Persada merancang dan memproduksi Neon Box Bulat
                 Akrilik custom sebagai media identitas visual untuk showroom
                 TACO di Sukabumi. Menggunakan material berkualitas dan sistem

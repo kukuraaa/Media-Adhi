@@ -1,5 +1,8 @@
-import { FaInstagram, FaWhatsapp, FaFacebookF, FaMapMarkerAlt, } from 'react-icons/fa'
+import { HiMapPin } from "react-icons/hi2";
 import logo from "../../assets/Vector.png"
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -19,10 +22,10 @@ export const Footer = () => {
             </p>
 
             <div className="flex lg:hidden items-center gap-4 pt-2">
-              <FaInstagram className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
-              <FaWhatsapp className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
-              <FaFacebookF className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
-              <FaMapMarkerAlt className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+              <PiInstagramLogoFill className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+              <IoLogoWhatsapp className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+              <FaFacebook className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
+              <HiMapPin className="w-5 h-5 text-blue-900 shrink-0 cursor-pointer" />
             </div>
           </div>
 
@@ -54,10 +57,10 @@ export const Footer = () => {
           <span className="min-[1440px]:w-[450px] min-[1440px]:h-[19px]"> © {new Date().getFullYear()} Media Adhi Persada. All rights reserved. - Website by Mangcoding.com</span>
 
           <div className="hidden lg:flex items-center gap-5 min-[1440px]:w-[144px] min-[1440px]:h-[24px]">
-            <FaInstagram className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
-            <FaWhatsapp className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
-            <FaFacebookF className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
-            <FaMapMarkerAlt className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
+            <PiInstagramLogoFill className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
+            <IoLogoWhatsapp className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
+            <FaFacebook className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
+            <HiMapPin className="w-6 h-6 text-blue-900 shrink-0 cursor-pointer" />
           </div>
         </div>
       </div>

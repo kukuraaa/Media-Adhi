@@ -1,6 +1,12 @@
 import { useState } from "react";
-import { FaWhatsapp, FaMapMarkerAlt, FaInstagram, FaFacebookF, FaShareAlt, FaRegCopy, FaCheck } from "react-icons/fa";
+import {  FaCheck } from "react-icons/fa";
 import { AksiAjukan } from "./AksiAjukan";
+import { HiMapPin } from "react-icons/hi2";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { IoIosShareAlt } from "react-icons/io";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { TbCopyFilled } from "react-icons/tb";
 
 export const AksiCepat = () => {
   const [copied, setCopied] = useState(false);
@@ -26,7 +32,7 @@ export const AksiCepat = () => {
 
         <div className="flex items-center justify-between max-[767px]:w-[408px] max-[767px]:h-[48px] min-[768px]:w-[680px] min-[768px]:h-[48px] min-[1440px]:w-[343px] min-[1440px]:h-[48px]">
           <div className="w-[40px] h-[40px] max-[767px]:w-[48px] max-[767px]:h-[48px] min-[768px]:w-[48px] min-[768px]:h-[48px] lg:w-[48px] lg:h-[48px] bg-[#DEE7F3] rounded-[8px] flex items-center justify-center">
-            <FaMapMarkerAlt className="text-[#013F8B] text-[18px] lg:text-[20px]" />
+            <HiMapPin className="text-[#013F8B] text-[18px] lg:text-[20px]" />
           </div>
 
           <div className="inline-flex items-center justify-center max-[767px]:w-[117px] max-[767px]:h-[30px] min-[768px]:w-[117px] min-[768px]:h-[30px] min-[1440px]:w-[117px] min-[1440px]:h-[30px] bg-[#D4E4D5] text-[#03850D] text-[13px] lg:text-[14px] font-medium px-5 sm:px-6 lg:px-[32px] py-1.5 lg:py-[8px] rounded-[100px]">
@@ -41,7 +47,7 @@ export const AksiCepat = () => {
 
        <div className="flex flex-col gap-[10px] max-[767px]:w-[408px] max-[767px]:h-[100px] min-[768px]:w-[680px] min-[768px]:h-[100px] min-[1440px]:w-[343px] min-[1440px]:h-[100px]">
          <button className="w-full h-[44px] max-[767px]:w-[408px] max-[767px]:h-[48px] min-[768px]:w-[680px] min-[768px]:h-[48px] min-[1440px]:w-[343px] min-[1440px]:h-[48px] shrink-0 lg:h-[48px] bg-[#013F8B] text-white text-[13px] lg:text-[14px] font-medium rounded-[100px] flex items-center justify-center gap-2 px-4 lg:px-[24px] hover:bg-[#01326f] transition-colors">
-          <FaWhatsapp className="text-[16px] lg:text-[18px]" />
+          <IoLogoWhatsapp className="text-[16px] lg:text-[18px]" />
             <span className="cursor-pointer">Konsultasikan Sekarang</span>
           </button>
 
@@ -56,17 +62,17 @@ export const AksiCepat = () => {
         <div className="flex items-center justify-between max-[767px]:w-[408px] max-[767px]:h-[28px] min-[768px]:w-[680px] min-[768px]:h-[28px] min-[1440px]:w-[343px] min-[1440px]:h-[28px]">
           <h4 className="text-[#212121] text-[18px] lg:text-[20px] font-semibold leading-[140%] tracking-[-0.04em] max-[767px]:w-[73px] max-[767px]:h-[28px] min-[768px]:w-[73px] min-[768px]:h-[28px] min-[1440px]:w-[73px] min-[1440px]:h-[28px]">Bagikan</h4>
           <div className="flex items-center gap-[12px] text-[#013F8B] max-[767px]:w-[144px] max-[767px]:h-[24px] min-[768px]:w-[144px] min-[768px]:h-[24px] min-[1440px]:w-[144px] min-[1440px]:h-[24px]">
-            <a href="#" className="hover:opacity-80 transition-opacity"><FaInstagram className="text-[16px] lg:text-[18px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
-            <a href="#" className="hover:opacity-80 transition-opacity"><FaWhatsapp className="text-[16px] lg:text-[18px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
-            <a href="#" className="hover:opacity-80 transition-opacity"><FaFacebookF className="text-[14px] lg:text-[16px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
-            <a href="#" className="hover:opacity-80 transition-opacity"><FaShareAlt className="text-[14px] lg:text-[16px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
+            <a href="#" className="hover:opacity-80 transition-opacity"><PiInstagramLogoFill className="text-[16px] lg:text-[18px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
+            <a href="#" className="hover:opacity-80 transition-opacity"><IoLogoWhatsapp className="text-[16px] lg:text-[18px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
+            <a href="#" className="hover:opacity-80 transition-opacity"><FaFacebook className="text-[14px] lg:text-[16px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
+            <a href="#" className="hover:opacity-80 transition-opacity"><IoIosShareAlt className="text-[14px] lg:text-[16px] max-[767px]:w-[24px] max-[767px]:h-[24px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" /></a>
           </div>
         </div>
 
        <div className="w-full max-[767px]:w-[408px] max-[767px]:h-[59px] max-[767px]:box-border min-[768px]:w-[680px] min-[768px]:h-[59px] min-[768px]:box-border min-[1440px]:w-[343px] min-[1440px]:h-[59px] min-[1440px]:box-border shrink-0 bg-white border border-gray-200 rounded-[12px] p-2.5 lg:p-[12px] flex items-center justify-between gap-2 mt-2">
           <span className="text-[11px] lg:text-[12px] text-gray-500 truncate max-[767px]:w-[350px] max-[767px]:h-[25px] min-[768px]:w-[622px] min-[768px]:h-[25px] min-[1440px]:w-[285px] min-[1440px]:h-[25px]">{shareUrl}</span>
           <button onClick={handleCopy} className="text-gray-700 hover:text-black transition-colors shrink-0" title="Salin Link">
-            {copied ? <FaCheck className="text-green-600 text-[14px] lg:text-[16px]" /> : <FaRegCopy className="text-[20px] lg:text-[20px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" />}
+            {copied ? <FaCheck className="text-green-600 text-[14px] lg:text-[16px]" /> : <TbCopyFilled className="text-[20px] lg:text-[20px] min-[768px]:w-[24px] min-[768px]:h-[24px] min-[1440px]:w-[24px] min-[1440px]:h-[24px]" />}
           </button>
         </div>
       </div>
