@@ -12,10 +12,10 @@ export const Hero = () => {
           </span>
         </button>
 
-        <div className="w-full mt-[20px] max-md:mt-0 flex flex-row md:max-lg:flex-col max-md:flex-col items-start gap-[80px] md:max-lg:gap-[40px] max-md:gap-[40px] max-md:w-[448px] max-md:h-auto">
-          <div className="w-[570px] h-[444px] md:max-lg:w-[720px] md:max-lg:h-[394px] max-md:w-[448px] max-md:h-auto flex flex-col">
-            <div className="w-[570px] h-auto md:max-lg:w-[570px] md:max-lg:h-[154px] max-md:w-[448px] max-md:h-auto flex flex-col gap-[8px] max-md:gap-[10px]">
-              <h1 className="w-full md:max-lg:w-[570px] md:max-lg:h-[104px] lg:w-[570px] lg:h-[104px] h-auto shrink-0 text-[#212121] text-[43px] md:max-lg:text-[36px] max-md:text-[36px] font-semibold leading-[100%] tracking-[-0.04em] m-0">
+        <div className="w-full mt-[20px] max-md:mt-0 flex flex-row md:max-lg:flex-col max-md:flex-col items-start gap-[80px] md:max-lg:gap-[40px] max-md:gap-[40px] max-md:w-[448px] max-md:h-[1139px]">
+          <div className="w-[570px] h-[444px] md:max-lg:w-[720px] md:max-lg:h-[394px] max-md:w-[448px] max-md:h-[546px] flex flex-col">
+           <div className="lg:w-[570px] lg:h-[154px] w-[570px] h-auto md:max-lg:w-[720px] md:max-lg:h-[154px] max-md:w-[448px] max-md:h-[206px] flex flex-col gap-[8px] max-md:gap-[10px]">
+              <h1 className="w-full md:max-lg:w-[720px] md:max-lg:h-[104px] lg:w-[570px] lg:h-[104px] h-auto max-md:w-[448px] max-md:h-[156px] shrink-0 text-[#212121] text-[43px] md:max-lg:text-[36px] max-md:text-[43px] font-semibold leading-[100%] tracking-[-0.04em] m-0">
                 Pembuatan Neon Box Bulat Akrilik Custom untuk TACO
               </h1>
 
