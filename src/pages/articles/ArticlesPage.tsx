@@ -1,7 +1,15 @@
-export const ArticlesPage = () => {
+import React from 'react';
+import { ArticleHeroSection } from './section/ArticleHeroSection';
+import ArticleListSection from './section/ArticleListSection';
+
+
+export const ArticlesPage: React.FC = () => {
   return (
-    <div className="py-20 text-center">
-      <h1 className="text-2xl font-bold text-slate-800">Halaman Artikel & Berita</h1>
-    </div>
-  )
-}
+    <main className="w-full bg-white min-h-screen py-12 flex flex-col gap-12">
+      <ArticleHeroSection />
+      <ArticleListSection />
+    </main>
+  );
+};
+
+export default ArticlesPage;
