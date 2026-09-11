@@ -99,7 +99,7 @@ export const ArtikelLainnya = () => {
               </div>
 
               <div className="flex flex-col gap-[8px] justify-center overflow-hidden w-full">
-                <h4 className="text-[14px] font-medium text-[#000000f2] leading-[140%] tracking-[-0.02em] line-clamp-2 group-hover:text-blue-600 transition-colors">
+                <h4 className="text-[14px] font-medium text-[#000000f2] leading-[140%] tracking-[-0.02em] line-clamp-2git transition-colors">
                   {item.title}
                 </h4>
 
