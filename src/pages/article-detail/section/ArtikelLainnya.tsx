@@ -88,7 +88,7 @@ export const ArtikelLainnya = () => {
           {articlesList.map((item) => (
             <div
               key={item.id}
-              className="w-full bg-white border border-[#EFEFEF] rounded-[16px] py-[8px] px-[16px] flex items-center gap-[12px] cursor-pointer group hover:shadow-sm transition-all"
+              className="w-full bg-white border border-[#EFEFEF] rounded-[16px] py-[8px] px-[16px] flex items-center gap-[12px] cursor-pointer group"
             >
               <div className="w-[64px] h-[64px] shrink-0 rounded-[8px] overflow-hidden bg-gray-100">
                 <img
