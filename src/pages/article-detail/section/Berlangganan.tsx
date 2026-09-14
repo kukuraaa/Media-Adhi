@@ -10,7 +10,7 @@ const Berlangganan = () => {
           <div className="relative z-10 flex w-full flex-col items-center">
 
             <div className="flex flex-col items-center gap-[8px]">
-              <h2 className="h-[58px] w-[547px] text-center font-['Inter'] text-[48px] font-semibold leading-[100%] tracking-[-0.04em] text-white">
+              <h2 className="h-[58px] w-[547px] text-center font-Inter text-[48px] font-semibold leading-[100%] tracking-[-0.04em] text-white">
                 Berlangganan Newsletter
               </h2>
 

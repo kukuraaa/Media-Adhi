@@ -35,9 +35,9 @@ export const ArtikelLainnya = () => {
   ];
 
   return (
-    <div className="w-full lg:w-[383px] flex flex-col gap-[10px]">
+    <div className="w-full flex flex-col gap-[10px] min-[1440px]:w-[383px] min-[1440px]:h-[726px]">
       
-      <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[16px]">
+      <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[16px] min-[1440px]:w-[383px] min-[1440px]:h-[135px]">
         <div className="flex items-center justify-between w-full h-[28px]">
           <h3 className="text-[20px] font-semibold text-[#212121] tracking-[-0.04em]">
             Bagikan
@@ -47,15 +47,12 @@ export const ArtikelLainnya = () => {
             <button className="text-[#013F8B]">
               <PiInstagramLogoFill size={24} />
             </button>
-
             <button className="text-[#013F8B]">
               <IoLogoWhatsapp size={24} />
             </button>
-
             <button className="text-[#013F8B]">
               <FaFacebook size={24} />
             </button>
-
             <button className="text-[#013F8B]">
               <IoIosShareAlt size={24} />
             </button>
@@ -67,18 +64,17 @@ export const ArtikelLainnya = () => {
             https://mediaadhipersada.id/blog/meningkatkan-efisiensi-cafe-dengan-sistem-pembayaran-qr
           </span>
 
-          <button className="text-[#212121] transition-opacity">
+          <button className="text-[#212121] hover:opacity-75 transition-opacity">
             <TbCopyFilled size={24} />
           </button>
         </div>
       </div>
 
-      <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[20px]">
+      <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[20px] min-[1440px]:w-[383px] min-[1440px]:h-[549px]">
         <div className="flex flex-col gap-[4px]">
           <h3 className="text-[20px] font-semibold text-[#212121] tracking-[-0.04em]">
             Artikel Lainnya
           </h3>
-
           <p className="text-[14px] text-[#777777] font-normal leading-[180%] tracking-[-0.02em]">
             Butuh penawaran cepat? Hubungi tim kami.
           </p>
@@ -88,18 +84,13 @@ export const ArtikelLainnya = () => {
           {articlesList.map((item) => (
             <div
               key={item.id}
-              className="w-full bg-white border border-[#EFEFEF] rounded-[16px] py-[8px] px-[16px] flex items-center gap-[12px] cursor-pointer group"
-            >
+              className="w-full bg-white border border-[#EFEFEF] rounded-[16px] py-[8px] px-[16px] flex items-center gap-[12px] cursor-pointer group hover:shadow-sm transition-all">
               <div className="w-[64px] h-[64px] shrink-0 rounded-[8px] overflow-hidden bg-gray-100">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover"/>
               </div>
 
               <div className="flex flex-col gap-[8px] justify-center overflow-hidden w-full">
-                <h4 className="text-[14px] font-medium text-[#000000f2] leading-[140%] tracking-[-0.02em] line-clamp-2git transition-colors">
+                <h4 className="text-[14px] font-medium text-[#000000f2] leading-[140%] tracking-[-0.02em] line-clamp-2">
                   {item.title}
                 </h4>
 
