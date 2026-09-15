@@ -41,59 +41,56 @@ const artikelData = [
 
 export const ArtikelBerita = () => {
   return (
-    <section className="w-full min-[1440px]:w-[1440px] min-[1440px]:h-[883px] bg-white px-[80px] py-[80px] flex flex-col items-center">
+    <section className="w-full min-[1440px]:w-[1440px] min-[1440px]:h-[883px] bg-white px-[20px] md:max-[1439px]:px-[24px] md:max-[1439px]:py-[40px] min-[1440px]:px-[80px] min-[1440px]:py-[80px] flex flex-col items-center">
       <div className="w-full max-w-[1280px] flex flex-col gap-[40px]">
         
-        <div className="w-full min-[1440px]:w-[1280px] min-[1440px]:h-[124px] flex flex-col gap-[24px]">
-          <h2 className="min-[1440px]:w-[494px] min-[1440px]:h-[58px] text-[48px] font-semibold leading-[100%] tracking-[-0.04em] text-[#212121] flex items-center shrink-0">
+        <div className="w-full min-[1440px]:w-[1280px] md:max-[1439px]:h-[124px] min-[1440px]:h-[124px] flex flex-col gap-[16px] md:max-[1439px]:gap-[16px] min-[1440px]:gap-[24px]">
+          <h2 className="w-full md:max-[1439px]:w-[494px] md:max-[1439px]:h-[58px] min-[1440px]:w-[494px] min-[1440px]:h-[58px] text-[28px] md:max-[1439px]:text-[48px] min-[1440px]:text-[48px] font-semibold leading-[100%] tracking-[-0.04em] text-[#212121] flex items-center shrink-0">
             Artikel & Berita Lainnya
           </h2>
 
-          <p className="w-full min-[1440px]:w-[549px] min-[1440px]:h-[50px] text-[14px] font-normal leading-[180%] tracking-[0.01em] text-[#616161] shrink-0">
+          <p className="w-full md:max-[1439px]:w-[549px] md:max-[1439px]:h-[50px] min-[1440px]:w-[549px] min-[1440px]:h-[50px] text-[14px] font-normal leading-[180%] tracking-[0.01em] text-[#616161] shrink-0">
             Pilih spot billboard strategis yang siap mengangkat brand Anda. Transparan, cepat, dan mudah untuk booking.
           </p>
         </div>
 
-        <div className="w-full min-[1440px]:w-[1280px] min-[1440px]:h-[559px] grid grid-cols-1 md:grid-cols-3 gap-[20px] items-stretch">
-          {artikelData.map((item) => (
-            <article key={item.id} className="w-[413.33px] flex flex-col gap-[24px]">
-              <div className="w-full h-[333px] rounded-[8px] overflow-hidden bg-[#F6F6F6] relative">
+        <div className="w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[559px] min-[1440px]:w-[1280px] min-[1440px]:h-[559px] grid grid-cols-1 md:max-[1439px]:grid-cols-2 min-[1440px]:grid-cols-3 gap-[20px] min-[1440px]:gap-[20px] items-stretch">
+          {artikelData.map((item, index) => (
+            <article key={item.id} className={`w-full min-[1440px]:w-[413.33px] flex flex-col gap-[24px] ${index === 2 ? "hidden min-[1440px]:flex" : "flex"}`}>
+              <div className="w-full h-[250px] sm:h-[300px] md:max-[1439px]:h-[333px] min-[1440px]:h-[333px] rounded-[8px] overflow-hidden bg-[#F6F6F6] relative shrink-0">
                 <img src={item.image} alt={item.title} className="w-full h-full object-cover"/>
               </div>
 
               <div className="w-full flex flex-col gap-[12px] flex-grow justify-between min-w-0">  
-                  <div className="min-[1440px]:w-[134px] min-[1440px]:h-[40px] inline-flex items-center justify-center rounded-full bg-[#D2E2F7] border border-[#367FD9]/22">
-                        <span className="min-[1440px]:w-[96px] min-[1440px]:h-[22px] text-[12px] font-normal leading-[180%] text-[#03418D]">
-                            {item.category}
-                        </span>
+                <div>
+                  <div className="inline-flex items-center justify-center md:max-[1439px]:w-[134px] md:max-[1439px]:h-[40px] h-[40px] px-[18px] py-[8px] rounded-full bg-[#D2E2F7] border border-[#367FD9]/22 mb-[12px]">
+                    <span className="md:max-[1439px]:w-[96px] md:max-[1439px]:h-[22px] text-[12px] font-normal leading-[180%] text-[#03418D]">
+                      {item.category}
+                    </span>
                   </div>
 
-                  <h3 className="text-[18px] font-semibold leading-[140%] text-[#212121] truncate w-full min-[1440px]:w-[413.33px] min-[1440px]:h-[25px]">
+                  <h3 className="text-[18px] font-medium md:max-[1439px]:font-medium min-[1440px]:font-semibold leading-[140%] md:max-[1439px]:leading-[140%] text-[#212121] truncate md:max-[1439px]:w-[350px] md:max-[1439px]:h-[25px] min-[1440px]:w-[413.33px] mb-[12px]">
                     {item.title}
                   </h3>
 
-                  <p className="text-[14px] font-normal leading-[180%] text-[#616161] line-clamp-2 min-[1440px]:w-[413.33px] min-[1440px]:h-[54px]">
+                  <p className="text-[14px] font-normal leading-[180%] text-[#616161] line-clamp-2 md:max-[1439px]:w-[350px] md:max-[1439px]:h-[54px] w-full min-[1440px]:w-[413.33px]">
                     {item.description}
                   </p>
-                
-                <div className="flex items-center gap-[8px] w-full min-[1440px]:w-[245px] h-[47px] shrink-0">
-                <img src={item.avatar} alt={item.author} className="w-[47px] h-[47px] rounded-full object-cover shrink-0"/>
-                <div className="flex flex-col justify-center min-w-0 min-[1440px]:w-[190px] min-[1440px]:h-[47px]">
-                    <span className="text-[14px] font-medium text-[#212121] leading-[180%] min-[1440px]:w-[43px] min-[1440px]:h-[25px]">
-                    {item.author}
-                    </span>
-
-                    <div className="flex items-center gap-[8px] whitespace-nowrap mt-[0px] min-[1440px]:w-[190px] min-[1440px]:h-[22px]">
-                    <span className="text-[12px] font-normal leading-[180%] text-[#616161] min-[1440px]:w-[90px] min-[1440px]:h-[22px]">
-                        {item.date}
-                    </span>
-
-                    <span className="w-[4px] h-[4px] rounded-full bg-[#111111] shrink-0"></span>
-                    <span className="text-[12px] font-normal leading-[180%] text-[#616161] min-[1440px]:w-[80px] min-[1440px]:h-[22px]">
-                        {item.readTime}
-                    </span>
-                    </div>
                 </div>
+
+                <div className="flex items-center gap-[8px] md:max-[1439px]:w-[245px] md:max-[1439px]:h-[47px] w-full min-[1440px]:w-[245px] h-[47px] shrink-0 pt-[12px]">
+                  <img src={item.avatar} alt={item.author} className="w-[47px] h-[47px] rounded-full object-cover shrink-0"/>
+                  <div className="flex flex-col justify-center min-w-0 md:max-[1439px]:w-[190px] md:max-[1439px]:h-[47px] min-[1440px]:w-[190px] min-[1440px]:h-[47px]">
+                    <span className="md:max-[1439px]:w-[43px] md:max-[1439px]:h-[25px] text-[14px] font-medium text-[#212121] leading-[180%]">
+                      {item.author}
+                    </span>
+
+                    <div className="flex items-center gap-[8px] md:max-[1439px]:w-[190px] md:max-[1439px]:h-[22px] whitespace-nowrap text-[12px] font-normal leading-[180%] text-[#616161]">
+                      <span>{item.date}</span>
+                      <span className="w-[4px] h-[4px] rounded-full bg-[#111111] inline-block shrink-0"></span>
+                      <span>{item.readTime}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>
