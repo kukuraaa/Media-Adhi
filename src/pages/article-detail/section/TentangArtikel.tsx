@@ -2,17 +2,18 @@ import laptop3 from "../../../assets/laptop3.png";
 
 export const TentangArtikel = () => {
   return (
-    <section className="w-full lg:w-[857px] flex flex-col gap-[24px]">
-      <div className="flex flex-col gap-[24px] w-full min-[1440px]:w-[857px] min-[1440px]:h-[848px]">
-        <p className="w-full min-[1440px]:w-[857px] min-[1440px]:h-[75px] text-[14px] font-normal leading-[180%] text-[#777777]">
+    <section className="w-full lg:w-[857px] flex flex-col gap-[24px] md:max-[1439px]:items-center">
+      <div className="flex flex-col gap-[24px] w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[948px] min-[1440px]:w-[857px] min-[1440px]:h-[848px]">
+        
+        <p className="w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[75px] min-[1440px]:w-[857px] min-[1440px]:h-[75px] text-[14px] font-normal leading-[180%] text-[#777777]">
           Pelayanan yang lambat atau pesanan yang salah catat tidak hanya merusak pengalaman pengunjung, tetapi juga berdampak langsung pada reputasi bisnis Anda. Untuk mengatasi leher botol (bottleneck) operasional ini, saatnya Anda beralih dari pencatatan manual ke sistem otomasi bisnis.
         </p>
 
-        <p className="w-full min-[1440px]:w-[857px] min-[1440px]:h-[50px] text-[14px] font-normal leading-[180%] text-[#777777]">
+        <p className="w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[75px] min-[1440px]:w-[857px] min-[1440px]:h-[50px] text-[14px] font-normal leading-[180%] text-[#777777]">
           Salah satu inovasi paling berdampak adalah penerapan aplikasi Point of Sales (POS) yang terintegrasi dengan Sistem Pemesanan QR Code di Meja. Berikut adalah alasan mengapa kedai kopi Anda wajib mengadopsi teknologi ini:
         </p>
 
-        <div className="w-full min-[1440px]:w-[857px] min-[1440px]:h-[675px] text-[14px] font-normal leading-[180%] text-[#777777] flex flex-col justify-between">
+        <div className="w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[750px] md:max-[1439px]:gap-[24px] min-[1440px]:w-[857px] min-[1440px]:h-[675px] text-[14px] font-normal leading-[180%] text-[#777777] flex flex-col justify-between">
           <div className="flex flex-col gap-[8px]">
             <strong className="font-bold text-[#212121]">1. Alur Pemesanan Mandiri (Self-Service) yang Cepat</strong>
             <span>Dengan menempelkan stiker kode QR unik di setiap meja, pelanggan yang datang bisa langsung duduk, memindai (scan) QR menggunakan smartphone mereka, dan mengakses menu digital secara interaktif. Mereka dapat memilih makanan, menambahkan catatan khusus (misalnya, "kopi tanpa gula"), dan bahkan langsung melakukan pembayaran. Proses ini memangkas waktu tunggu secara drastis karena pelanggan tidak perlu lagi memanggil pelayan atau antre di kasir.</span>
@@ -35,7 +36,7 @@ export const TentangArtikel = () => {
         </div>
       </div>
 
-      <div className="mt-[56px] w-full h-[300px] sm:h-[400px] lg:h-[553px] rounded-[16px] overflow-hidden">
+      <div className="mt-[56px] md:max-[1439px]:mt-[80px] w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[553px] md:max-[1439px]:rounded-[24px] h-[300px] sm:h-[400px] lg:h-[553px] rounded-[16px] overflow-hidden">
         <img src={laptop3} alt="Dashboard Administratif Real-Time" className="w-full h-full object-cover" />
       </div>
     </section>

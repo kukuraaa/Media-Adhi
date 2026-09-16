@@ -1,7 +1,8 @@
 export const ManfaatArtikel = () => {
   return (
-    <section className="w-full lg:w-[857px] flex flex-col">
-      <div className="flex flex-col gap-[24px] w-full min-[1440px]:w-[857px] min-[1440px]:h-[425px]">
+    <section className="w-full lg:w-[857px] flex flex-col md:max-[1439px]:items-center">
+      
+      <div className="flex flex-col gap-[24px] w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[450px] min-[1440px]:w-[857px] min-[1440px]:h-[425px]">
         <h2 className="text-[14px] font-bold leading-[180%] text-[#212121]">
           Transformasi Digital Kedai Kopi Anda Bersama Media Adhi Persada
         </h2>
@@ -35,25 +36,25 @@ export const ManfaatArtikel = () => {
         </p>
       </div>
 
-      <div className="mt-[80px] flex flex-col gap-[24px]">
+      <div className="mt-[80px] flex flex-col gap-[24px] w-full md:max-[1439px]:w-[724px] md:max-[1439px]:h-[80px]">
         <h3 className="font-semibold text-[18px] leading-[100%] tracking-[-0.04em] text-[#111111]">
           Tags
         </h3>
 
-        <div className="w-full min-[1440px]:w-[724px] min-[1440px]:h-[38px] flex flex-nowrap items-center gap-[8px] overflow-x-auto min-[1440px]:overflow-visible">
-          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap shrink-0">
+        <div className="w-full md:max-[1439px]:w-[724px] min-[1440px]:w-[724px] h-[38px] flex flex-nowrap items-center gap-[8px] md:max-[1439px]:overflow-visible min-[1440px]:overflow-visible">
+          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap">
             Digital Marketing
           </span>
 
-          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap shrink-0">
+          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap">
             Content Creation
           </span>
 
-          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap shrink-0">
+          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap">
             Social Media Management
           </span>
 
-          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap shrink-0">
+          <span className="h-[38px] px-[20px] py-[12px] bg-[#F6F6F6] text-[#212121] text-[14px] font-normal leading-[100%] rounded-[8px] flex items-center justify-center gap-[10px] cursor-pointer whitespace-nowrap">
             Search Engine Optimization
           </span>
         </div>
