@@ -57,7 +57,7 @@ export const ArtikelBerita = () => {
         <div className="w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[559px] min-[1440px]:w-[1280px] min-[1440px]:h-[559px] grid grid-cols-1 md:max-[1439px]:grid-cols-2 min-[1440px]:grid-cols-3 gap-[20px] min-[1440px]:gap-[20px] items-stretch">
           {artikelData.map((item, index) => (
             <article key={item.id} className={`w-full min-[1440px]:w-[413.33px] flex flex-col gap-[24px] ${index === 2 ? "hidden min-[1440px]:flex" : "flex"}`}>
-              <div className="w-full h-[250px] sm:h-[300px] md:max-[1439px]:h-[333px] min-[1440px]:h-[333px] rounded-[8px] overflow-hidden bg-[#F6F6F6] relative shrink-0">
+              <div className="w-full h-[250px] sm:h-[300px] md:max-[1439px]:h-[333px] min-[1440px]:w-[413.33px] min-[1440px]:!h-[333px] rounded-[8px] overflow-hidden bg-[#F6F6F6] relative shrink-0">
                 <img src={item.image} alt={item.title} className="w-full h-full object-cover"/>
               </div>
 
