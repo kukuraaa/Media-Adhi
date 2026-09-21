@@ -11,26 +11,26 @@ export const ArtikelLainnya = () => {
     {
       id: 1,
       image: lapetop,
-      title: "Pemasangan Seri Vertical Light Box Illuminated Gudang Garam International",
-      subtitle: "Media Adhi Persada (MAP) kembali dipercaya oleh brand terkemuka, Gudang Garam International, untuk mengeksekusi kampanye periklanan luar ruang (OOH) berdampak tinggi. Proyek ini melibatkan pemasangan seri Vertical Light Box (Neon Box Tiang atau Illuminated Street Banner) secara berderet di sepanjang jalur arteri strategis di area Sukabumi.",
+      title:"Pemasangan Seri Vertical Light Box Illuminated Gudang Garam International",
+      subtitle:"Media Adhi Persada (MAP) kembali dipercaya oleh brand terkemuka, Gudang Garam International, untuk mengeksekusi kampanye periklanan luar ruang (OOH) berdampak tinggi. Proyek ini melibatkan pemasangan seri Vertical Light Box (Neon Box Tiang atau Illuminated Street Banner) secara berderet di sepanjang jalur arteri strategis di area Sukabumi.",
     },
     {
       id: 2,
       image: lapetop,
-      title: "Peluncuran Produk Baru Oleh PT Sarihusada Generasi Mahardhika",
-      subtitle: "PT Sarihusada Generasi Mahardhika meluncurkan produk susu pertumbuhan baru yang bertujuan untuk memberikan nutrisi maksimal bagi anak-anak. Acara peluncuran ini dihadiri oleh para ahli gizi dan influencer parenting.",
+      title:"Peluncuran Produk Baru Oleh PT Sarihusada Generasi Mahardhika",
+      subtitle:"PT Sarihusada Generasi Mahardhika meluncurkan produk susu pertumbuhan baru yang bertujuan untuk memberikan nutrisi maksimal bagi anak-anak. Acara peluncuran ini dihadiri oleh para ahli gizi dan influencer parenting.",
     },
     {
       id: 3,
       image: lapetop,
       title: "Kemitraan Strategis Antara Gojek dan Grab",
-      subtitle: "Gojek dan Grab mengumumkan kemitraan strategis untuk meningkatkan layanan antar makanan di Jakarta. Kolaborasi ini bertujuan untuk memberikan pengalaman yang lebih baik bagi pelanggan.",
+      subtitle:"Gojek dan Grab mengumumkan kemitraan strategis untuk meningkatkan layanan antar makanan di Jakarta. Kolaborasi ini bertujuan untuk memberikan pengalaman yang lebih baik bagi pelanggan.",
     },
     {
       id: 4,
       image: lapetop,
       title: "Festival Budaya Harapan Bangsa 2023",
-      subtitle: "Festival Budaya Harapan Bangsa 2023 diadakan untuk merayakan keragaman budaya Indonesia. Acara ini menampilkan pertunjukan seni tradisional dan pameran kuliner dari berbagai daerah.",
+      subtitle:"Festival Budaya Harapan Bangsa 2023 diadakan untuk merayakan keragaman budaya Indonesia. Acara ini menampilkan pertunjukan seni tradisional dan pameran kuliner dari berbagai daerah.",
     },
   ];
 
@@ -38,9 +38,9 @@ export const ArtikelLainnya = () => {
     <div className="w-full flex flex-col md:max-[1439px]:items-center min-[1440px]:w-[383px]">
       <div className="w-full flex flex-col gap-[10px] md:max-[1439px]:w-[720px] md:max-[1439px]:h-[662px] md:max-[1439px]:gap-[10px] min-[1440px]:w-[383px] min-[1440px]:h-[726px]">
         
-        <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[16px] md:max-[1439px]:w-[720px] md:max-[1439px]:h-[135px] md:max-[1439px]:p-[20px] md:max-[1439px]:gap-[8px] min-[1440px]:w-[383px] min-[1440px]:h-[135px]">
+        <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[16px] md:max-[1439px]:h-[135px] md:max-[1439px]:p-[20px] md:max-[1439px]:gap-[8px] min-[1440px]:h-[135px]">
           
-          <div className="flex items-center justify-between md:max-[1439px]:w-[680px] md:max-[1439px]:h-[28px] min-[1440px]:w-[343px] min-[1440px]:h-[28px]">
+          <div className="flex items-center justify-between md:max-[1439px]:h-[28px] min-[1440px]:h-[28px]">
             <h3 className="text-[20px] font-semibold text-[#212121] tracking-[-0.04em] md:max-[1439px]:w-[73px] md:max-[1439px]:h-[28px] min-[1440px]:w-[73px] min-[1440px]:h-[28px]">
               Bagikan
             </h3>
@@ -61,7 +61,7 @@ export const ArtikelLainnya = () => {
             </div>
           </div>
 
-          <div className="w-full bg-white border border-[#EFEFEF] rounded-[16px] px-[16px] py-[12px] flex items-center justify-between gap-[12px] md:max-[1439px]:w-[680px] md:max-[1439px]:!h-[59px] md:max-[1439px]:p-[16px] md:max-[1439px]:gap-[12px] min-[1440px]:w-[343px] min-[1440px]:h-[59px] min-[1440px]:shrink-0">
+          <div className="w-full bg-white border border-[#EFEFEF] rounded-[16px] px-[16px] py-[12px] flex items-center justify-between gap-[12px] md:max-[1439px]:!h-[59px] md:max-[1439px]:p-[16px] md:max-[1439px]:gap-[12px] min-[1440px]:h-[59px] min-[1440px]:shrink-0">
             <span className="text-[14px] text-[#616161] truncate font-normal md:max-[1439px]:w-[610px] md:max-[1439px]:h-[25px] min-[1440px]:w-[273px] min-[1440px]:h-[25px]">
               https://mediaadhipersada.id/blog/meningkatkan-efisiensi-cafe-dengan-sistem-pembayaran-qr
             </span>
@@ -72,33 +72,34 @@ export const ArtikelLainnya = () => {
           </div>
         </div>
 
-        <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[20px] md:max-[1439px]:w-[720px] md:max-[1439px]:p-[20px] md:max-[1439px]:gap-[20px] min-[1440px]:w-[383px] min-[1440px]:h-[549px]">
+        <div className="w-full bg-[#F9F9F9] border border-black/5 rounded-[24px] p-[20px] flex flex-col gap-[20px] md:max-[1439px]:p-[20px] md:max-[1439px]:gap-[20px] min-[1440px]:h-[549px]">
           
-          <div className="md:max-[1439px]:w-[680px] md:max-[1439px]:h-[61px] md:max-[1439px]:shrink-0 flex flex-col gap-[4px] min-[1440px]:w-[343px] min-[1440px]:h-[61px] min-[1440px]:shrink-0">
-            <h3 className="text-[20px] font-semibold text-[#212121] tracking-[-0.04em] md:max-[1439px]:w-[680px] min-[1440px]:w-[343px] min-[1440px]:h-[28px] min-[1440px]:shrink-0">
+          <div className="md:max-[1439px]:h-[61px] md:max-[1439px]:shrink-0 flex flex-col gap-[4px] min-[1440px]:h-[61px] min-[1440px]:shrink-0">
+            <h3 className="text-[20px] font-semibold text-[#212121] tracking-[-0.04em] md:max-[1439px]:h-[28px] min-[1440px]:h-[28px] min-[1440px]:shrink-0">
               Artikel Lainnya
             </h3>
-            <p className="text-[14px] text-[#777777] font-normal leading-[180%] tracking-[-0.02em] md:max-[1439px]:w-[680px] md:max-[1439px]:!h-[25px] md:max-[1439px]:!leading-[25px] min-[1440px]:w-[343px] min-[1440px]:h-[25px] min-[1440px]:shrink-0">
+
+            <p className="text-[14px] text-[#777777] font-normal leading-[180%] tracking-[-0.02em] md:max-[1439px]:!h-[25px] md:max-[1439px]:!leading-[25px] min-[1440px]:h-[25px] min-[1440px]:shrink-0">
               Butuh penawaran cepat? Hubungi tim kami.
             </p>
           </div>
 
-          <div className="flex flex-col gap-[12px] md:max-[1439px]:w-[680px] md:max-[1439px]:h-[364px] md:max-[1439px]:gap-[12px] md:max-[1439px]:shrink-0 min-[1440px]:w-[343px] min-[1440px]:h-[428px] min-[1440px]:shrink-0">
+          <div className="flex flex-col gap-[12px] md:max-[1439px]:h-[364px] md:max-[1439px]:gap-[12px] md:max-[1439px]:shrink-0 min-[1440px]:h-[428px] min-[1440px]:shrink-0">
             {articlesList.map((item) => (
-              <div key={item.id} className="w-full bg-white border border-[#EFEFEF] rounded-[16px] py-[8px] px-[16px] flex items-center gap-[12px] cursor-pointer group hover:shadow-sm transition-all md:max-[1439px]:w-[680px] md:max-[1439px]:h-[82px] md:max-[1439px]:py-[8px] md:max-[1439px]:px-[16px] md:max-[1439px]:gap-[12px] min-[1440px]:w-[343px] min-[1440px]:h-[98px] min-[1440px]:shrink-0">
+              <div key={item.id} className="w-full bg-white border border-[#EFEFEF] rounded-[16px] py-[8px] px-[16px] flex items-center gap-[12px] cursor-pointer group hover:shadow-sm transition-all md:max-[1439px]:h-[82px] md:max-[1439px]:py-[8px] md:max-[1439px]:px-[16px] md:max-[1439px]:gap-[12px] min-[1440px]:h-[98px] min-[1440px]:shrink-0">
                 <div className="w-[64px] h-[64px] shrink-0 rounded-[8px] overflow-hidden bg-gray-100">
                   <img src={item.image} alt={item.title} className="w-full h-full object-cover"/>
                 </div>
 
                 <div className="flex flex-col gap-[8px] justify-center overflow-hidden w-full md:max-[1439px]:w-[570px] md:max-[1439px]:h-[52px] min-[1440px]:w-[233px] min-[1440px]:h-[80px] min-[1440px]:shrink-0">
                   <h4 className={`text-[14px] font-medium text-[#000000f2] leading-[140%] tracking-[-0.02em] line-clamp-2 md:max-[1439px]:w-[486px] md:max-[1439px]:h-[20px] min-[1440px]:h-[48px] min-[1440px]:shrink-0 ${
-                     item.id === 4
-                      ? "min-[1440px]:w-[197px]"
-                      : "min-[1440px]:w-[233px]"}`}>
-                     {item.title}
+                      item.id === 4
+                        ? "min-[1440px]:w-[197px]"
+                        : "min-[1440px]:w-[233px]"}`}>
+                    {item.title}
                   </h4>
 
-                  <p className="text-[12px] text-[#777777] leading-[180%] tracking-[0em] truncate font-normal md:max-[1439px]:w-[570px] md:max-[1439px]:h-[24px] min-[1440px]:w-[233px] min-[1440px]:h-[24px] min-[1440px]:shrink-0">
+                  <p className="text-[12px] text-[#777777] leading-[180%] tracking-[0em] truncate font-normal md:max-[1439px]:h-[24px] min-[1440px]:h-[24px] min-[1440px]:shrink-0">
                     {item.subtitle}
                   </p>
                 </div>

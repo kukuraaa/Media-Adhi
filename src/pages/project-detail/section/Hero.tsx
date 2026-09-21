@@ -14,21 +14,23 @@ export const Hero = () => {
 
         <div className="w-full mt-[20px] max-md:mt-0 flex flex-row md:max-lg:flex-col max-md:flex-col items-start gap-[80px] md:max-lg:gap-[40px] max-md:gap-[40px] max-md:w-[448px] max-md:h-[1139px]">
           <div className="w-[570px] h-[444px] md:max-lg:w-[720px] md:max-lg:h-[394px] max-md:w-[448px] max-md:h-[546px] flex flex-col">
-           <div className="lg:w-[570px] lg:h-[154px] w-[570px] h-auto md:max-lg:w-[720px] md:max-lg:h-[154px] max-md:w-[448px] max-md:h-[206px] flex flex-col gap-[8px] max-md:gap-[10px]">
-              <h1 className="w-full md:max-lg:w-[720px] md:max-lg:h-[104px] lg:w-[570px] lg:h-[104px] h-auto max-md:w-[448px] max-md:h-[156px] shrink-0 text-[#212121] text-[43px] md:max-lg:text-[36px] max-md:text-[43px] font-semibold leading-[100%] tracking-[-0.04em] m-0">
+            
+            <div className="flex flex-col gap-[8px] max-md:gap-[10px] lg:h-[154px] h-auto md:max-lg:h-[154px] max-md:h-[206px]">
+              
+              <h1 className="md:max-lg:h-[104px] lg:h-[104px] h-auto max-md:h-[156px] shrink-0 text-[#212121] text-[43px] md:max-lg:text-[36px] max-md:text-[43px] font-semibold leading-[100%] tracking-[-0.04em] m-0">
                 Pembuatan Neon Box Bulat Akrilik Custom untuk TACO
               </h1>
 
-              <div className="flex items-center gap-[8px] box-border w-[253px] h-[40px] px-[8px] py-[8px] mt-1 max-md:mt-0">
+              <div className="flex items-center gap-[8px] box-border h-[40px] px-[8px] py-[8px] mt-1 max-md:mt-0">
                 <MapPin className="w-[24px] h-[24px] shrink-0 text-[#212121]/70" />
-                <span className="w-[221px] h-[18px] shrink-0 whitespace-nowrap font-normal text-[18px] leading-[18px] tracking-[-0.04em] text-[#212121]/70">
+                <span className="h-[18px] shrink-0 whitespace-nowrap font-normal text-[18px] leading-[18px] tracking-[-0.04em] text-[#212121]/70">
                   Kec Cibadak, Kab Sukabumi
                 </span>
               </div>
             </div>
 
-            <div className="w-[570px] h-[250px] md:max-lg:w-[720px] md:max-lg:h-[200px] max-md:w-[448px] max-md:h-[300px] mt-[32px] max-md:mt-[40px] flex flex-col">
-              <p className="w-[570px] h-[250px] md:max-lg:w-[720px] md:max-lg:h-[200px] max-md:w-[448px] max-md:h-[300px] text-[14px] font-normal leading-[180%] tracking-[0] text-[#777777] text-justify m-0">
+            <div className="h-[250px] md:max-lg:h-[200px] max-md:h-[300px] mt-[32px] max-md:mt-[40px] flex flex-col">
+              <p className="h-[250px] md:max-lg:h-[200px] max-md:h-[300px] text-[14px] font-normal leading-[180%] tracking-[0] text-[#777777] text-justify m-0">
                 Media Adhi Persada merancang dan memproduksi Neon Box Bulat
                 Akrilik custom sebagai media identitas visual untuk showroom
                 TACO di Sukabumi. Menggunakan material berkualitas dan sistem

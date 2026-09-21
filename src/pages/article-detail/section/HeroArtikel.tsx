@@ -25,8 +25,9 @@ export const HeroArtikel = () => {
             </span>
           </div>
 
-          <div className="flex flex-col gap-[16px] w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[222px] min-[1440px]:w-[857px] min-[1440px]:h-[164px]">
-            <h1 className="hidden md:block w-full md:max-[1439px]:w-[720px] md:max-[1439px]:h-[174px] md:max-[1439px]:text-[48px] md:max-[1439px]:leading-[100%] min-[1440px]:w-[857px] min-[1440px]:h-[116px] min-[1440px]:text-[48px] min-[1440px]:leading-[58px] sm:text-[36px] font-semibold tracking-[-0.04em] text-[#212121]">
+          <div className="flex flex-col gap-[16px] md:max-[1439px]:h-[222px] min-[1440px]:h-[164px]">
+            
+            <h1 className="hidden md:block md:max-[1439px]:h-[174px] md:max-[1439px]:text-[48px] md:max-[1439px]:leading-[100%] min-[1440px]:h-[116px] min-[1440px]:text-[48px] min-[1440px]:leading-[58px] sm:text-[36px] font-semibold tracking-[-0.04em] text-[#212121]">
               <span className="md:max-[1439px]:hidden">
                 Meningkatkan Efisiensi Cafe dengan
                 <br />
@@ -46,7 +47,7 @@ export const HeroArtikel = () => {
               Meningkatkan Efisiensi Cafe dengan Sistem Pemesanan QR Code di Meja
             </h1>
 
-            <div className="flex items-center gap-[8px] w-full md:max-[1439px]:w-[275px] md:max-[1439px]:h-[32px] min-[1440px]:w-[275px] min-[1440px]:h-[32px]">
+            <div className="flex items-center gap-[8px] md:max-[1439px]:w-[275px] md:max-[1439px]:h-[32px] min-[1440px]:w-[275px] min-[1440px]:h-[32px]">
               <span className="text-[18px] font-normal leading-[180%] text-[rgba(17,17,17,1)]">
                 5 Agustus 2026
               </span>
@@ -57,7 +58,7 @@ export const HeroArtikel = () => {
             </div>
           </div>
 
-          <p className="w-full max-md:w-[448px] max-md:h-[200px] md:max-[1439px]:w-[720px] md:max-[1439px]:h-[125px] min-[1440px]:w-[857px] min-[1440px]:h-[125px] text-[14px] font-normal leading-[180%] text-[#616161]">
+          <p className="max-md:w-[448px] max-md:h-[200px] md:max-[1439px]:h-[125px] min-[1440px]:h-[125px] text-[14px] font-normal leading-[180%] text-[#616161]">
             Tinggalkan cara manual. Pelajari bagaimana aplikasi Point of Sales (POS) otomatis dengan fitur scan QR di meja dapat mempercepat pelayanan dan menaikkan omzet kedai kopi Anda.
             <br />
             Menjalankan bisnis kedai kopi (cafe) atau restoran yang ramai adalah dambaan setiap pengusaha kuliner. Namun, di saat jam sibuk (rush hour), antrean panjang di meja kasir atau staf pelayan yang kewalahan mencatat pesanan sering kali memicu rasa frustrasi pada pelanggan.
@@ -65,7 +66,7 @@ export const HeroArtikel = () => {
         </div>
 
         <div className="w-full max-md:w-[448px] max-md:h-[553px] md:max-[1439px]:w-[720px] md:max-[1439px]:h-[553px] min-[1440px]:w-[857px] min-[1440px]:h-[553px] rounded-[16px] overflow-hidden shrink-0">
-          <img src={mejasaja} alt="Meningkatkan Efisiensi Cafe" className="w-full h-full object-cover" />
+          <img src={mejasaja} alt="Meningkatkan Efisiensi Cafe" className="w-full h-full object-cover"/>
         </div>
       </div>
     </section>
