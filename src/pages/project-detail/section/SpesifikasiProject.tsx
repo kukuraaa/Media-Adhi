@@ -18,15 +18,15 @@ export const SpesifikasiProject = () => {
           <div className="w-[48px] h-[48px] shrink-0 rounded-full bg-blue-100 flex items-center justify-center">
             <PiNutFill className="w-[20px] h-[20px] lg:w-[22.45px] lg:h-[26.03px] text-[#013F8B]" />
           </div>
-    
-          <h2 className="w-auto lg:w-[203px] h-[34px] max-md:w-[203px] max-md:h-[34px] text-[24px] font-medium leading-[140%] tracking-[-0.02em] text-[#212121] m-0">
+
+          <h2 className="w-auto h-[34px] max-md:h-[34px] text-[24px] font-medium leading-[140%] tracking-[-0.02em] text-[#212121] m-0">
             Spesifikasi Project
           </h2>
         </div>
 
-        <div className="w-full md:max-lg:w-[680px] md:max-lg:h-[684px] lg:w-[590px] h-auto lg:h-[546px] max-md:w-[408px] max-md:h-[684px] overflow-hidden rounded-[16px] border border-[#DADADA]">
-          
-          <div className="grid grid-cols-2 w-full md:max-lg:w-[680px] md:max-lg:h-[98.57px] lg:w-[590px] h-[64px] lg:h-[78.86px] max-md:h-[98.57px] border-b border-[#DADADA]">
+        <div className="w-full md:max-lg:w-[680px] md:max-lg:h-[684px] h-auto lg:h-[546px] max-md:w-[408px] max-md:h-[684px] overflow-hidden rounded-[16px] border border-[#DADADA]">
+
+          <div className="grid grid-cols-2 w-full md:max-lg:h-[98.57px] h-[64px] lg:h-[78.86px] max-md:h-[98.57px] border-b border-[#DADADA]">
             <div className="flex items-center justify-center border-r border-[#DADADA] text-[14px] text-[#212121] max-md:h-[96.57px]">
               Item
             </div>
@@ -36,7 +36,8 @@ export const SpesifikasiProject = () => {
           </div>
 
           {specifications.map(([label, value]) => (
-            <div key={label} className="grid grid-cols-2 w-full md:max-lg:w-[680px] md:max-lg:h-[97.57px] h-[80px] max-md:h-[97.57px] border-b border-[#DADADA] last:border-b-0">
+            <div key={label}
+              className="grid grid-cols-2 w-full md:max-lg:h-[97.57px] h-[80px] max-md:h-[97.57px] border-b border-[#DADADA] last:border-b-0">
               <div className="flex items-center justify-center border-r border-[#DADADA] text-[14px] text-[#777777] px-2 text-center max-md:h-[96.57px]">
                 {label}
               </div>

@@ -26,37 +26,40 @@ export const JelajahiProyek = () => {
       <div className="w-full max-w-[1440px] h-full max-md:h-full mx-auto px-[80px] py-[80px] md:px-[24px] md:py-[40px] lg:px-[80px] lg:py-[80px] max-md:px-[24px] max-md:py-[40px]">
         <div className="w-[1280px] md:w-[720px] lg:w-[1280px] max-md:w-full flex flex-col gap-[40px]">
 
-          <div className="w-[1280px] md:w-[720px] lg:w-[1280px] max-md:w-[432px] h-[118px] max-md:h-[195px] flex flex-col gap-[16px]">
+          <div className="w-full h-[118px] max-md:h-[195px] flex flex-col gap-[16px]">
             <h2 className="w-[447px] max-md:w-[432px] h-[52px] max-md:h-[104px] text-[43px] font-semibold leading-[100%] max-md:leading-[115%] tracking-[-0.04em] text-[#212121] m-0">
-               Jelajahi Proyek <br className="hidden max-md:block" />Lainnya
+              Jelajahi Proyek <br className="hidden max-md:block" />
+              Lainnya
             </h2>
 
             <p className="w-[679px] max-md:w-[432px] h-[50px] max-md:h-[75px] text-[12px] md:text-[14px] lg:text-[12px] max-md:text-[14px] font-normal leading-[150%] md:leading-[180%] lg:leading-[150%] max-md:leading-[180%] tracking-[0] text-[#777777] m-0">
-              Temukan berbagai proyek signage, billboard, dan media promosi yang telah kami kerjakan untuk 
+              Temukan berbagai proyek signage, billboard, dan media promosi yang
+              telah kami kerjakan untuk
               <br className="max-md:hidden" />
-              membantu bisnis meningkatkan visibilitas dan memperkuat identitas merek.
+              membantu bisnis meningkatkan visibilitas dan memperkuat identitas
+              merek.
             </p>
           </div>
 
-          <div className="w-[1280px] md:w-[720px] lg:w-[1280px] max-md:w-[432px] h-[440px] max-md:h-[900px] grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 max-md:grid-cols-1 gap-[16px] md:gap-[20px] lg:gap-[16px] max-md:gap-[20px]">
+          <div className="w-full h-[440px] max-md:h-[900px] grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 max-md:grid-cols-1 gap-[16px] md:gap-[20px] lg:gap-[16px] max-md:gap-[20px]">
             {jelajahi.map((jelajahi, index) => (
-              <div key={index} className={`w-[413.33px] md:w-[350px] lg:w-[413.33px] max-md:w-full h-[440px] max-md:h-auto flex flex-col ${
+              <div key={index} className={`w-full md:w-[350px] lg:w-[413.33px] max-md:w-full h-[440px] max-md:h-auto flex flex-col ${
                   index === 2 ? "hidden lg:flex" : ""
-                } ${
-                  index >= 2 ? "max-md:hidden" : ""
-                }`}>
-                <img src={jelajahi.image} alt={jelajahi.title} className="w-[416px] md:w-[350px] lg:w-[416px] max-md:w-full h-[333px] object-cover rounded-[8px]"/>
+                } ${index >= 2 ? "max-md:hidden" : ""}`}>
+                <img src={jelajahi.image} alt={jelajahi.title} className="w-full h-[333px] object-cover rounded-[8px]"/>
 
-                <div className="w-[413.33px] md:w-[350px] lg:w-[413.33px] max-md:w-[432px] h-[83px] max-md:h-[83px] mt-[16px] md:mt-[24px] lg:mt-[16px] flex flex-col md:gap-[4px] lg:gap-0 max-md:gap-[4px]">
-                  <h3 className="w-[413.33px] md:w-[350px] lg:w-[413.33px] max-md:w-[432px] h-[25px] max-md:h-[25px] text-[18px] font-medium leading-[140%] tracking-[-0.02em] text-[#212121] truncate">{jelajahi.title}</h3>
+                <div className="w-full h-[83px] max-md:h-[83px] mt-[16px] md:mt-[24px] lg:mt-[16px] flex flex-col md:gap-[4px] lg:gap-0 max-md:gap-[4px]">
+                  <h3 className="h-[25px] max-md:h-[25px] text-[18px] font-medium leading-[140%] tracking-[-0.02em] text-[#212121] truncate">
+                    {jelajahi.title}
+                  </h3>
 
-                  <p className="w-[413.33px] md:w-[350px] lg:w-[413.33px] max-md:w-[432px] h-[54px] max-md:h-[54px] mt-[4px] md:mt-0 lg:mt-[4px] max-md:mt-0 text-[14px] font-normal leading-[180%] tracking-[0] text-[#777777] line-clamp-2 overflow-hidden">
+                  <p className="h-[54px] max-md:h-[54px] mt-[4px] md:mt-0 lg:mt-[4px] max-md:mt-0 text-[14px] font-normal leading-[180%] tracking-[0] text-[#777777] line-clamp-2 overflow-hidden">
                     {jelajahi.description}
                   </p>
                 </div>
               </div>
             ))}
-          </div>  
+          </div>
         </div>
       </div>
     </section>
