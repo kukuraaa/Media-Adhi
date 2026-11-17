@@ -72,4 +72,4 @@ MEDIA-ADHI-PRADA/
 
 ## 👩‍💻 Developer
 
-Developed by **Khumaera M.S and Team**
+Developed by **Mangcoding team and Khumaera M.S**
