@@ -1,33 +1,76 @@
-# React + TypeScript + Vite
+# MEDIA ADHI PRADA
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Website **Media Adhi Persada** merupakan website company profile yang dibuat untuk memperkenalkan perusahaan, layanan, serta portofolio pekerjaan di bidang Advertising, Event Organizer, dan IT Solution.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Teknologi yang digunakan dalam pengembangan website ini:
 
-## React Compiler
+- React.js
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Pages
 
-## Expanding the Oxlint configuration
+Website ini memiliki beberapa halaman utama:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Home** – Halaman utama untuk memperkenalkan Media Adhi Persada.
+- **Billboard** – Menampilkan informasi layanan billboard dan media promosi.
+- **Portofolio** – Menampilkan hasil pekerjaan dan proyek perusahaan.
+- **Blog** – Menampilkan artikel dan informasi terbaru.
+- **Blog Detail** – Menampilkan isi artikel secara lengkap.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 🚀 Getting Started
+
+Ikuti langkah berikut untuk menjalankan project secara lokal.
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/kukuraaa/Media-Adhi.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
-# MEDIA-ADHI-PRADA
+### 2. Masuk ke Folder Project
+
+```bash
+cd Media-Adhi
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Jalankan Development Server
+
+```bash
+npm run dev
+```
+
+Website dapat diakses melalui alamat lokal yang ditampilkan di terminal.
+
+## 📁 Project Structure
+
+```text
+MEDIA-ADHI-PRADA/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+*Struktur folder dapat disesuaikan dengan struktur project sebenarnya.*
+
+## 👩‍💻 Developer
+
+Developed by **Khumaera M.S and Team**
