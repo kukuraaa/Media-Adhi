@@ -2,7 +2,7 @@
 
 Website **Media Adhi Persada** merupakan website company profile yang dibuat untuk memperkenalkan perusahaan, layanan, serta portofolio pekerjaan di bidang Advertising, Event Organizer, dan IT Solution.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 Teknologi yang digunakan dalam pengembangan website ini:
 
@@ -10,7 +10,6 @@ Teknologi yang digunakan dalam pengembangan website ini:
 - TypeScript
 - Vite
 - Tailwind CSS
-- Lucide React
 
 ## 📌 Pages
 
@@ -22,7 +21,7 @@ Website ini memiliki beberapa halaman utama:
 - **Blog** – Menampilkan artikel dan informasi terbaru.
 - **Blog Detail** – Menampilkan isi artikel secara lengkap.
 
-## 🚀 Getting Started
+## Getting Started
 
 Ikuti langkah berikut untuk menjalankan project secara lokal.
 
